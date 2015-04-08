@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: 'NationalBold';
+    src: url('../fonts/national-bold.eot');
+    src: url('../fonts/national-bold.eot') format('embedded-opentype'),
+         url('../fonts/national-bold.woff') format('woff'),
+         url('../fonts/national-bold.ttf') format('truetype'),
+         url('../fonts/national-bold.svg#NationalBold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'NationalLight';
+    src: url('../fonts/national-light.eot');
+    src: url('../fonts/national-light.eot') format('embedded-opentype'),
+         url('../fonts/national-light.woff') format('woff'),
+         url('../fonts/national-light.ttf') format('truetype'),
+         url('../fonts/national-light.svg#NationalLight') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'NationalMedium';
+    src: url('../fonts/national-medium.eot');
+    src: url('../fonts/national-medium.eot') format('embedded-opentype'),
+         url('../fonts/national-medium.woff') format('woff'),
+         url('../fonts/national-medium.ttf') format('truetype'),
+         url('../fonts/national-medium.svg#NationalMedium') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'NationalRegular';
+    src: url('../fonts/national-regular.eot');
+    src: url('../fonts/national-regular.eot') format('embedded-opentype'),
+         url('../fonts/national-regular.woff') format('woff'),
+         url('../fonts/national-regular.ttf') format('truetype'),
+         url('../fonts/national-regular.svg#NationalRegular') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'NationalSemibold';
+    src: url('../fonts/national-semibold.eot');
+    src: url('../fonts/national-semibold.eot') format('embedded-opentype'),
+         url('../fonts/national-semibold.woff') format('woff'),
+         url('../fonts/national-semibold.ttf') format('truetype'),
+         url('../fonts/national-semibold.svg#NationalSemibold') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'NationalThin';
+    src: url('../fonts/national-thin.eot');
+    src: url('../fonts/national-thin.eot') format('embedded-opentype'),
+         url('../fonts/national-thin.woff') format('woff'),
+         url('../fonts/national-thin.ttf') format('truetype'),
+         url('../fonts/national-thin.svg#NationalThin') format('svg');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'National Fuzel Semibold 20 Upper';
+  src: url('../fonts/National Fuzel Semibold 20 Upper.eot');
+  src: local('☺'), url('../fonts/National Fuzel Semibold 20 Upper.woff') format('woff'),
+        url('../fonts/National Fuzel Semibold 20 Upper.ttf') format('truetype'),
+        url('../fonts/National Fuzel Semibold 20 Upper.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
