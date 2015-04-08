@@ -440,7 +440,7 @@ body {
 }
 
 .btn-google-play {
-  background: url("../images/google-play.png") no-repeat scroll center 60% / auto 55% #fff;
+  background: url("google-play.png") no-repeat scroll center 60% / auto 55% #fff;
   border: 1px solid #009494;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -455,7 +455,7 @@ body {
 }
 
 .btn-app-store {
-  background: url("../images/app-store.png") no-repeat scroll center 60% / auto 55% #fff;
+  background: url("app-store.png") no-repeat scroll center 60% / auto 55% #fff;
   border: 1px solid #e8276d;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -470,7 +470,7 @@ body {
 }
 
 .btn-app-store2 {
-  background: url("../images/app-store2.png") no-repeat scroll center 60% / auto 55% #fff;
+  background: url("app-store2.png") no-repeat scroll center 60% / auto 55% #fff;
   border: 1px solid #ff5b00;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
