@@ -35,3 +35,35 @@ text-decoration: none!important;
 .product ul li a.desc:hover{
 	color: #9e0b0f;
 }
+
+.dscimg{
+	float: left;
+	width: 500px;
+	text-align: center;
+	border:1px solid #000;
+}
+.dscimg img{
+	max-width: 100%;
+}
+.dscinfo{
+	float: right;
+	margin-left: 50px;
+	width: 650px;
+}
+.dscinfo-title{
+
+}
+.dscinfo-title a{
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #737373;
+}
+.dscinfo-detail{
+	margin-top: 20px;
+}
+.dscinfo-detail p{
+	color: #222;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: justify;
+}
