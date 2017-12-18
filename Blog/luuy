@@ -1,0 +1,19 @@
+* Chú ý khi sử dụng float:
+	- 1 phần tử float sẽ làm cho phần tử không float đằng sau nó chồng lên,có thể gây ra hiệu quả không mong muốn.
+	- Để tránh hiện tượng trên.dùng thuộc tính clear cho phần tử k float :
+		.clear{
+			clear: both;
+		}
+		+ clear both ngăn k cho float cả 2 phía,nó cũng có thể nhận các giá trị như : left(chỉ ngăn k cho float bên trái),right(ngăn k cho float bên phải).
+		+ Thuộc tính này được dùng khá nhiều trong các trang web và thường được đặt trong 1 class chung(vd:.clear,.clearfix..) để tiện sử dụng tại nhiều trang khác nhau.
+	- Ngoài ra nếu 1 phần tử k float nhưng toàn bộ phần tử con lại dùng float thì chiều cao của phần tử cha sẽ = 0,và các phần tử bên dưới sẽ chồng lên nó.Để khắc phục dùng:
+		+ Chèn thêm 1 thẻ DIV rỗng vào cuối nội dung phần tử cha(hoặc sử dụng pseudo class ::after) và đặt thuộc tính clear.
+		+ Sử dụng thuộc tính Display:table cho phần tử cha(cần đặt chiều rộng phù hợp).
+		+ Sử dụng thuộc tính overflow:auto cho phần tử cha.
+
+* Padding : giãn cách nội dung với viền của element.
+* Margin : Giãn cách giữa các elenment với nhau.
+* Nên sử dụng box-sizing:border-box cho toàn bộ element trong trang để style cho dễ : kích thước thật = kích thước lý thyết
+	*{
+		box-sizing: border-box;
+	}
