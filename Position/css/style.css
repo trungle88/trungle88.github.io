@@ -64,7 +64,7 @@ img{
     padding: 0 0px 10px;
     list-style: none;
     max-width: 200px;
-    background: #0073b5;
+    background: #161F2A;
 }
 .menu-navigation ul li{
 	line-height: 33px;
@@ -125,11 +125,19 @@ img{
 }
 
 #footer{
-	background: #262626;
-	min-height: 184px;
+	width: 100%;
+    background: #161F2A;
+    text-align: center;
+    padding: 10px 0px;
+}
+#footer p {
+	color: #CFC4C4;
+    font-size: 14px;
+    font-family: arial;
 }
 
-.scroll-top{
-	display: block;
-	text-align: center;
+#scroll-top{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
 }
