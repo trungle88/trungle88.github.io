@@ -1,3 +1,24 @@
+
+* Nếu so sánh mức độ nhấn mạnh thì thẻ <strong> có tác dụng nhấn mạnh hơn là thẻ <em>.
+
+* Khi đặt tên class và id, không được bắt đầu bởi 1 số và dùng tiếng Việt có dấu.
+
+* Mức độ ưu tiên của selector (khi style trùng nhau) theo thứ tự giảm dần: Inline style, ID selector, Class selector, Element selector. Ngoài ra nếu selector giống nhau thì cái viết sau sẽ đè lên cái trước và cái nào chi tiết hơn thì sẽ có mức ưu tiên cao hơn.
+
+* Có thể sử dụng thêm thuộc tính !important để đẩy mức ưu tiên của selector lên cao nhất.
+
+* Để quy định kích thước font chữ ta dùng thuộc tính font-size, để quy định chiều cao của 1 dòng ta dùng thuộc tính line-height.
+
+* Thay đổi hướng chữ bằng thuộc tính direction, ví dụ direction:rtl
+
+* Để tạo icon cho trang web (icon nhỏ xuất hiện ở trên tab của trình duyệt) ta dùng thẻ link như sau (ảnh icon thường có kich thước là 16x16 pixels hoặc 32x32 pixels, định dạng là PNG, GIF hoặc ICO).
+
+* Với thuộc tính rel của thẻ <a>: Giá trị là nofollow được sử dụng bởi Google để đánh dấu rằng google sẽ không đọc theo và đánh index các link đó. Với các link mà bạn không muốn hoặc không rõ trang được liên kết đến thì nên đặt thuộc tính này (vi du như link đến trang đăng nhập, đăng ký, hay link do người dùng post lên ở các phần comment, …)
+
+* Khi sử dụng thẻ <a> thường chỉ cần style 2 màu là màu khi hover và các màu còn lại.
+
+* Pseudo Element cũng có thể chỉ cần dùng 1 dấu " : " cũng chạy được (chuẩn CSS1 và CSS2). Tuy nhiên chúng ta nên viết là " :: " theo đúng chuẩn của CSS3  để phân biệt giữa pseudo-class và pseudo-element.
+
 * Chú ý khi sử dụng float:
 	- 1 phần tử float sẽ làm cho phần tử không float đằng sau nó chồng lên,có thể gây ra hiệu quả không mong muốn.
 	- Để tránh hiện tượng trên.dùng thuộc tính clear cho phần tử k float :
@@ -12,8 +33,25 @@
 		+ Sử dụng thuộc tính overflow:auto cho phần tử cha.
 
 * Padding : giãn cách nội dung với viền của element.
+
 * Margin : Giãn cách giữa các elenment với nhau.
+
 * Nên sử dụng box-sizing:border-box cho toàn bộ element trong trang để style cho dễ : kích thước thật = kích thước lý thyết
 	*{
 		box-sizing: border-box;
 	}
+
+* Display: Làm thay đổi cách thức hiển thị của 1 phần tử.
+	+ inline : <a>,<img>,<span>..
+	+ Block : <div>,<h1>-<h6>,<p>...
+	+ Điểm khác nhau giữa Block và inline :
+		- Block chấp nhận thuộc tính width và height ,inline thì không.
+		- Block có chiều rộng mặc định là 100%, inline thì có chiều rộng bằng nội dung bên trong.
+		- Margin,Padding khi áp dụng cho inline chỉ làm giãn khoảng cách theo chiều ngang, Block thì cả 2 chiều.
+
+	+ Inline-block : 1 phần tử inline nhưng có thể áp dụng thuộc tính width,height như Block.
+	+ None : Ẩn phần tử đi.
+	+ Để ẩn một phần tử ta cũng có thể dùng thuộc tính visibility: hidden; . Tuy nhiên thuộc tính này khác với display: none; ở chỗ nó chỉ làm chúng ta không nhìn thấy phần tử, nhưng nó vẫn chiếm chỗ trong layout còn display: none; thì làm phần tử biến mất hẳn khỏi layout.
+	+ Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto 
+
+* Position : Xác định thiết lập vị trí cho các phần tử trong HTML.
