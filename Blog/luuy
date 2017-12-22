@@ -55,3 +55,12 @@
 	+ Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto 
 
 * Position : Xác định thiết lập vị trí cho các phần tử trong HTML.
+	+ Khi sử dụng thuộc tính position với giá trị là absolute thì ta nên cho thẻ cha gần nhất làm mốc bằng cách đặt thuộc tính position: relative (có thể đặt bất kỳ position nào ngoài static tuy nhiên dùng relative sẽ ít ảnh hưởng đến layout).
+	
+	+ Khi sử dụng thuộc tính position với giá trị là absolute hoặc fixed, các phần tử sẽ đè lên nhau (theo trục z, hướng vuông góc với màn hình). Và để xác định mức độ ưu tiên phần tử nào sẽ ở bên trên (theo hướng nhìn của người dùng) ta sẽ sử dụng thuộc tính z-index (chúng ta sẽ nhìn thấy phần tử bên trên che khuất phần tử bên dưới trừ khi nó có background trong suốt). z-index nhận giá trị là các số (có thể nhận số âm) và số nào càng cao thì ưu tiên càng cao (ví d phần tử có z-index là 2 sẽ đè lên phần tử có z-index là 1).
+
+
+* Transition : Thuộc tính làm cho phần tử thay đổi thuộc tính của nó 1 cách từ từ trong 1 thời gian xác định.
+
+* Opacity : Xác định độ trong suốt của 1 phần tử.
+	+ Thuộc tính opacity mang tính kế thừa, tức là nếu element cha có opacity là 0.8 thì element con sẽ có opacity mặc định là 0.8. Khi đó nếu lại set opacity của element con là 0.5 vậy opacity thực tế sẽ là 0.8 x 0.5 = 0.4
