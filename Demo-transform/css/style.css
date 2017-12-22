@@ -23,6 +23,7 @@ h1 {
 	margin: 25px 0;
 	text-transform: uppercase;
 	text-align: center;
+	animation: title 10s ease infinite;
 }
 
 h1, h2, h3 {
@@ -34,6 +35,14 @@ h1, h2, h3 {
 
 p {
 	margin: 0 0 10px 0;
+}
+
+@keyframes title{
+	0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
 }
 
 .wrap{
@@ -48,14 +57,40 @@ p {
 }
 .thumb1,.thumb2{
 	padding: 4px;
-	border: 1px solid #ddd;
+	border: 3px solid #FFF;
 	cursor: pointer;
-	overflow: hidden;
+	overflow: 	hidden;
 	background-size: cover;
 	background-position: center center;
-	height: 300px;
+	height: 180px;
+	position: relative;
+	outline: 2px solid #DDD;
 }
 .col img{
 	vertical-align: middle;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+  	-moz-transform: translateX(-50%) translateY(-50p%);
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
+}
+.thumb1{
+	transition: all 0.5s ease;
+}
+
+.thumb2 img{
+	transition: all 0.5s linear;
+}
+
+.thumb1:hover{
+	transform: translate(0,5px);
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+.thumb2:hover img{
+	transform: scale(1.2);
 
 }

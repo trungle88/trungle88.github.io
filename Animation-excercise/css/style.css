@@ -1,0 +1,89 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+body{
+	font-weight: 500;
+	background-color: #FFF;
+}
+h1{
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	font-family: Georgia;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8E0B00;
+	text-align: center;
+}
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.col{
+	float: left;
+	width: 33.33333%;
+	padding: 15px;
+	position: relative;
+}
+.thumb{
+	padding: 4px;
+	border: 3px solid #FFF;
+	cursor: pointer;
+	overflow: 	hidden;
+	background-size: cover;
+	background-position: center center;
+	height: 180px;
+	position: relative;
+	outline: 2px solid #DDD;
+	transition: all 0.5s ease;
+}
+.thumb img{
+	vertical-align: middle;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+  	-moz-transform: translateX(-50%) translateY(-50p%);
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
+}
+.thumb:hover{
+	transform: translate(0,5px);
+}
+
+.author{
+	text-align: right;
+	padding: 15px;
+		
+	position: relative;
+	animation: elementFadeInAndOut 5s infinite;
+	animation-timing-function: ease-in;
+}
+.author span{
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: bold;
+
+}
+@keyframes elementFadeInAndOut{
+	from{
+		right: 0;
+	}
+	to{
+		right: 100%;
+	}
+}
+
+
+
+
