@@ -1,11 +1,33 @@
-
-* Nếu so sánh mức độ nhấn mạnh thì thẻ <strong> có tác dụng nhấn mạnh hơn là thẻ <em>.
-
-* Khi đặt tên class và id, không được bắt đầu bởi 1 số và dùng tiếng Việt có dấu.
+* Cấu trúc CSS: Selector:{property:value;}
 
 * Mức độ ưu tiên của selector (khi style trùng nhau) theo thứ tự giảm dần: Inline style, ID selector, Class selector, Element selector. Ngoài ra nếu selector giống nhau thì cái viết sau sẽ đè lên cái trước và cái nào chi tiết hơn thì sẽ có mức ưu tiên cao hơn.
 
 * Có thể sử dụng thêm thuộc tính !important để đẩy mức ưu tiên của selector lên cao nhất.
+
+* Thẻ <a> :
+	+ target : - _blank : mở 1 liên kết trong tab mới.
+			   - _self : Mặc định.
+			   - _parent : 
+			   - _top :
+			   - framename :
+
+	+ Link Color: - a:link : 1 liên kết mặc định.
+				  -	a:visited : Liên kết mà người dùng đã truy cập.
+				  - a:hover : 1 liên kết khi người dùng rê chuột qua.
+				  - a:active : 1 liên kết ngay khi nhấp chuột vào.
+
+	+ Nguyên tắc : - a:hover phải đi sau a:link và a:visited.
+				   - a:active phải đến sau a:hover.
+
+* Css Box Model : Bao gồm Margin,Border,padding và nội dung bên trong.
+
+* Css Outline : Là 1 đường kẻ vẽ xung quanh các border để làm nổi bật phần tử.
+
+* CSS Vertical-align : Sắp xếp các nội dung theo chiều dọc.
+
+* Nếu so sánh mức độ nhấn mạnh thì thẻ <strong> có tác dụng nhấn mạnh hơn là thẻ <em>.
+
+* Khi đặt tên class và id, không được bắt đầu bởi 1 số và dùng tiếng Việt có dấu.
 
 * Để quy định kích thước font chữ ta dùng thuộc tính font-size, để quy định chiều cao của 1 dòng ta dùng thuộc tính line-height.
 
@@ -19,7 +41,46 @@
 
 * Pseudo Element cũng có thể chỉ cần dùng 1 dấu " : " cũng chạy được (chuẩn CSS1 và CSS2). Tuy nhiên chúng ta nên viết là " :: " theo đúng chuẩn của CSS3  để phân biệt giữa pseudo-class và pseudo-element.
 
-* Chú ý khi sử dụng float:
+* Padding : giãn cách nội dung với viền của element.
+
+* Margin : Giãn cách giữa các elenment với nhau.
+
+* Nên sử dụng box-sizing:border-box cho toàn bộ element trong trang để style cho dễ : kích thước thật = kích thước lý thyết
+	*{
+		box-sizing: border-box;
+	}
+
+* Display: Làm thay đổi cách thức hiển thị của 1 phần tử.
+	+ inline : <a>,<img>,<span>.. Không bắt đầu trên 1 dòng mới và chỉ chiếm tối đa chiều rộng nếu cần.
+	+ Block : <div>,<h1>-<h6>,<p>,<form>,<header>,<footer>,<section>...luôn luôn bắt đầu trên 1 dòng và chiếm toàn bộ chiều rộng có sẵn.
+	+ Điểm khác nhau giữa Block và inline :
+		- Block chấp nhận thuộc tính width và height ,inline thì không.
+		- Block có chiều rộng mặc định là 100%, inline thì có chiều rộng bằng nội dung bên trong.
+		- Margin,Padding khi áp dụng cho inline chỉ làm giãn khoảng cách theo chiều ngang, Block thì cả 2 chiều.
+
+	+ Inline-block : 1 phần tử inline nhưng có thể áp dụng thuộc tính width,height như Block.
+	+ None : Ẩn phần tử đi,thường dùng trong JS.
+	+ Để ẩn một phần tử ta cũng có thể dùng thuộc tính visibility: hidden; . Tuy nhiên thuộc tính này khác với display: none; ở chỗ nó chỉ làm chúng ta không nhìn thấy phần tử, nhưng nó vẫn chiếm chỗ trong layout còn display: none; thì làm phần tử biến mất hẳn khỏi layout.
+	+ Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto .
+
+* Position : Xác định thiết lập vị trí cho các phần tử trong HTML.
+	
+	+ Position:static : Mặc định.
+
+	+ Position:relative : Định vị tương đối so với vị trí bình thường của nó.
+
+	+ Position:fixed : Định vị tương đối so với khung,nó luôn ở trong cùng 1 vị trí ngay cả khi trang cuộn.
+
+	+ Position:absolute : Định vị tương đối với lớp cha gần nhất thay vì so với khung như mặc định.
+
+	+ Position:sticky : Định vị dựa trên vị trí cuộn của người dùng.	
+
+	+ Khi sử dụng thuộc tính position với giá trị là absolute thì ta nên cho thẻ cha gần nhất làm mốc bằng cách đặt thuộc tính position: relative (có thể đặt bất kỳ position nào ngoài static tuy nhiên dùng relative sẽ ít ảnh hưởng đến layout).
+	
+	+ Khi sử dụng thuộc tính position với giá trị là absolute hoặc fixed, các phần tử sẽ đè lên nhau (theo trục z, hướng vuông góc với màn hình). Và để xác định mức độ ưu tiên phần tử nào sẽ ở bên trên (theo hướng nhìn của người dùng) ta sẽ sử dụng thuộc tính z-index (chúng ta sẽ nhìn thấy phần tử bên trên che khuất phần tử bên dưới trừ khi nó có background trong suốt). z-index nhận giá trị là các số (có thể nhận số âm) và số nào càng cao thì ưu tiên càng cao (ví d phần tử có z-index là 2 sẽ đè lên phần tử có z-index là 1).
+
+* CSS float: Được sử dụng để định vị và bố trí trên trang web.
+
 	- 1 phần tử float sẽ làm cho phần tử không float đằng sau nó chồng lên,có thể gây ra hiệu quả không mong muốn.
 	- Để tránh hiện tượng trên.dùng thuộc tính clear cho phần tử k float :
 		.clear{
@@ -32,39 +93,75 @@
 		+ Sử dụng thuộc tính Display:table cho phần tử cha(cần đặt chiều rộng phù hợp).
 		+ Sử dụng thuộc tính overflow:auto cho phần tử cha.
 
-* Padding : giãn cách nội dung với viền của element.
-
-* Margin : Giãn cách giữa các elenment với nhau.
-
-* Nên sử dụng box-sizing:border-box cho toàn bộ element trong trang để style cho dễ : kích thước thật = kích thước lý thyết
-	*{
-		box-sizing: border-box;
-	}
-
-* Display: Làm thay đổi cách thức hiển thị của 1 phần tử.
-	+ inline : <a>,<img>,<span>..
-	+ Block : <div>,<h1>-<h6>,<p>...
-	+ Điểm khác nhau giữa Block và inline :
-		- Block chấp nhận thuộc tính width và height ,inline thì không.
-		- Block có chiều rộng mặc định là 100%, inline thì có chiều rộng bằng nội dung bên trong.
-		- Margin,Padding khi áp dụng cho inline chỉ làm giãn khoảng cách theo chiều ngang, Block thì cả 2 chiều.
-
-	+ Inline-block : 1 phần tử inline nhưng có thể áp dụng thuộc tính width,height như Block.
-	+ None : Ẩn phần tử đi.
-	+ Để ẩn một phần tử ta cũng có thể dùng thuộc tính visibility: hidden; . Tuy nhiên thuộc tính này khác với display: none; ở chỗ nó chỉ làm chúng ta không nhìn thấy phần tử, nhưng nó vẫn chiếm chỗ trong layout còn display: none; thì làm phần tử biến mất hẳn khỏi layout.
-	+ Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto 
-
-* Position : Xác định thiết lập vị trí cho các phần tử trong HTML.
-	+ Khi sử dụng thuộc tính position với giá trị là absolute thì ta nên cho thẻ cha gần nhất làm mốc bằng cách đặt thuộc tính position: relative (có thể đặt bất kỳ position nào ngoài static tuy nhiên dùng relative sẽ ít ảnh hưởng đến layout).
+* CSS Clear : Cho phép xác định những phần tử nào có thể nổi bên cạnh phần tử đã được xóa và vị trí của nó.
 	
-	+ Khi sử dụng thuộc tính position với giá trị là absolute hoặc fixed, các phần tử sẽ đè lên nhau (theo trục z, hướng vuông góc với màn hình). Và để xác định mức độ ưu tiên phần tử nào sẽ ở bên trên (theo hướng nhìn của người dùng) ta sẽ sử dụng thuộc tính z-index (chúng ta sẽ nhìn thấy phần tử bên trên che khuất phần tử bên dưới trừ khi nó có background trong suốt). z-index nhận giá trị là các số (có thể nhận số âm) và số nào càng cao thì ưu tiên càng cao (ví d phần tử có z-index là 2 sẽ đè lên phần tử có z-index là 1).
+	+ Nên sử dụng Clearfix hack để kiểm soát nội dung không bị tràn ra ngoài :
 
+		.clearfix::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+
+* CSS Display :
+	+ display:inline : Chuyển phần tử về hiển thị cùng 1 hàng.
+	+ display:inline-block : Chuyển phần tử về hiển thị trên cùng 1 hàng nhưng nó vẫn thừa hưởng các đặc tính của block như có thể tùy chỉnh kích thước,thêm background ....
+	+ display:block : chuyển phần tử về hiển thị kiểu block,sở hữu 1 hàng riêng. 
 
 * Transition : Thuộc tính làm cho phần tử thay đổi thuộc tính của nó 1 cách từ từ trong 1 thời gian xác định.
+
+	+ transition-timing-function : Xác định đường cong tốc độ của hiệu ứng.
+		- transition-timing-function:ease : khởi đầu chậm sau đó nhanh dần rồi kết thúc từ từ.
+		- transition-timing-function:linear : chuyển tiếp cùng tốc độ từ đầu đến cuối.
+		- transition-timing-function:ease-in : chuyển tiếp với khởi động chậm.
+		- transition-timing-function:ease-out : chuyển tiếp với kết thúc chậm.
+		- transition-timing-function:ease-in-out : Chuyển tiếp với khởi đầu và kết thúc chậm.
+
+	+ transition-delay : Xác định thời gian chậm trễ cho hiệu ứng chuyển tiếp.
+
+	+ transition-duration : Xác định thời gian 1 hiệu ứng chuyển tiếp cần để hoàn thành.
+
+	+ transition-property : Xác định tên của thuộc tính css cho hiệu ứng chuyển tiếp.
+
 
 * Opacity : Xác định độ trong suốt của 1 phần tử.
 	+ Thuộc tính opacity mang tính kế thừa, tức là nếu element cha có opacity là 0.8 thì element con sẽ có opacity mặc định là 0.8. Khi đó nếu lại set opacity của element con là 0.5 vậy opacity thực tế sẽ là 0.8 x 0.5 = 0.4
 
 * Transform : Xác định 1 chuyển đổi 2 chiều,3 chiều,có thể là xoay,tỷ lệ,di chuyển,nghiêng...
 
-* Overflow : Xác định điều xảy ra nếu 1 thành phần box tràn nội dung.
+* CSS Overflow : Xác định điều xảy ra nếu nội dung tràn khỏi 1 khối phần tử.
+	+ overflow:visible : Mặc định.
+
+	+ overflow:hidden : Lỗi tràn bị cắt bớt,phần còn lại của nội dung không thấy dc.
+
+	+ overflow:scroll : lỗi tràn bị cắt bớt nhưng xuất hiện 1 thanh cuộn để xem phần còn lại của nội dung.
+
+	+ overflow:auto : nếu bị tràn sẽ tự xuất hiện thanh cuộn.
+
+	+ overflow:initial : trả về giá trị mặc định.
+
+	+ overflow:inherit : 
+
+* Box-shadow : Gắn bóng của phần tử.
+
+* Animation : Cho phép phần tử thay đổi từ phong cách này sang phong cách khác.
+	+ animation-name : Tên phần tử.
+
+	+ animation-duration : Thời gian cần hoàn thành.
+
+	+ animation-delay : Thời gian chậm trễ cho sự bắt đầu của 1 animation.
+
+	+ animation-iteration-count : Xác định số lần 1 animation nên chạy.
+
+	+ animation-direction : Xác định 1 animation phải được phát chuyển tiếp,quay ngược hoặc 1 chu kỳ thay thế.
+		- animation-direction:normal : phát như bình thường.
+		- animation-direction:reverse : phát theo chiều ngược lại.
+		- animation-direction:alternate : phát trước sau đó ngược lại.
+		- animation-direction:alternate-reverse : chơi ngược trở lại đầu tiên sau đó chuyển tiếp.
+
+	+ animation-timing-function : Xác định đường cong tốc độ cho animation.
+		- animation-timing-function:ease : xác định 1 animation với khởi động chậm sau đó nhanh và kết thúc chậm.
+		- animation-timing-function:linear : Xác định 1 animation có cùng tốc độ từ đầu đến cuối.
+		- animation-timing-function:ease-in : khởi đầu chậm.
+		- animation-timing-function:ease-out : kết thúc chậm.
+		- animation-timing-function:ease-in-out : khởi đầu và kết thúc đều chậm.

@@ -22,7 +22,6 @@ h1{
 	color: #8E0B00;
 	text-align: center;
 }
-
 .wrapper{
 	margin: 0 auto;
 	max-width: 1000px;
@@ -58,16 +57,19 @@ h1{
   	transform: translateX(-50%) translateY(-50%);
 }
 .thumb:hover{
-	transform: translate(0,5px);
+	transform: rotate(360deg);
 }
 
 .author{
 	text-align: right;
 	padding: 15px;
-		
 	position: relative;
-	animation: elementFadeInAndOut 5s infinite;
-	animation-timing-function: ease-in;
+	animation-name: elementFadeInAndOut;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-timing-function: ease;
 }
 .author span{
 	text-transform: uppercase;
@@ -76,11 +78,21 @@ h1{
 
 }
 @keyframes elementFadeInAndOut{
-	from{
+	0%{
 		right: 0;
+		top: 0;
+		opacity: 1;
 	}
-	to{
-		right: 100%;
+	50%{
+		right: 50%;
+		top: 0;
+	}
+	75%{
+		right: 75%;
+		top: 0;
+	}
+	100%{
+		opacity: -1;
 	}
 }
 
