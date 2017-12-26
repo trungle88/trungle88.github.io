@@ -120,17 +120,28 @@ ul,ol{
 	border: 10px solid #FFF;
 	box-sizing: border-box;
 }
+.center-main{
+	display: inline-block;
+}
 .left-center-main{
 	float: left;
 	padding: 20px 10px;
 	width: 60%;
 	height: auto;
 }
-.left-center-main p{
+.text-main-homepage{
+}
+.text-main-homepage p{
 	color: #3a3534;
 	font-size: 15px;
-	line-height: 25px;
+	line-height: 20px;
 	text-align: justify;
+}
+.social-line-homapage{
+	text-align: center;
+	/*display: flex;
+	justify-content: center;*/
+	display: block;
 }
 .right-center-main{
 	float: right;
@@ -142,4 +153,122 @@ ul,ol{
 	max-width: 100%;
 	display: block;
 	box-sizing: border-box;
+}
+
+.col-one-third{
+	float: left;
+	height: auto;
+	display: block;
+	margin: 20px 0;
+}
+.col-one-third img{
+	max-width: 100%;
+	border: 10px solid #FFF;
+	box-sizing: border-box;
+}
+.gift-left-now{
+	margin-right: 40px;
+}
+.gift-right-now{
+	margin-left: 40px;
+	float: right;
+}
+.gift-center-now{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+/* footer*/
+#footer{
+	width: 100%;
+	background: url(../images/gjc-footerBkg.gif) no-repeat bottom right #2d292a;
+	height: 370px;
+}
+.footer-panel{
+	padding-top: 10px;
+}
+.footer-panel-header{
+	border-bottom: 1px solid #544d47;
+	height: 50px;
+}
+.colFooter-panel{
+	width: 23%;
+	float: left;
+	margin-right: 10px;
+	text-align: left;
+}
+.colFooter-panel h3{
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #a29f9a;
+	text-transform: uppercase;
+	margin: 20px 0 0 10px;
+}
+.colFooter-panel ul{
+
+}
+.colFooter-panel ul li{
+	border-bottom: 1px solid #3A3533;
+	display: block;
+	height: 20px;
+	padding: 10px 0 0 10px;
+}
+.colFooter-panel ul li a{
+	color: #73706D;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	text-align: justify;
+}
+.colFooter-panel ul li:hover a{
+	color: #FFF;
+}
+
+.copyright-footer{
+	margin: 50px 0 0 0;
+	color: #9b9893;
+	font-size: 0.8em;
+	padding: 0 0 0 10px;
+}
+
+
+
+/* About */
+.title-main{
+	background: #FFF;
+	padding: 10px;
+}
+.mod-title-main{
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.modBread-title{
+	background: url(../images/gjc-breadcrumbHome.gif) no-repeat center left ;
+	height: 20px;
+	padding: 5px 0 0 30px;
+	font-size: 18px;
+	
+}
+.modBread-title a{
+	color: #3c3c3c;
+}
+.modBread-title span{
+	margin: 0 3px;
+}
+.page-modBread-title{
+	background: #e87d1e;
+}
+.page-modBread-title h1{
+	font-size: 1.375em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 50px 10px 20px;
+	text-align: left;
+	color: #FFF;
+}
+
+.page-content{
+	font-size: 0.8em;
+	line-height: 1.5em;
+	background: #FFF;
+	margin-top: 10px;
 }
