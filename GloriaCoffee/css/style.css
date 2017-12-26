@@ -267,8 +267,19 @@ ul,ol{
 }
 
 .page-content{
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.5em;
 	background: #FFF;
 	margin-top: 10px;
+}
+.about-page-content{
+	padding: 10px;
+}
+.about-page-content h2{
+	font-size: 1.4em;
+	margin: 5px 0 10px 0;
+	padding: 0 0 10px 0;
+	color: #8b806f;
+	text-transform: none;
+	border-bottom: 1px dotted #afa089;
 }
