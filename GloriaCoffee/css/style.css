@@ -1,0 +1,145 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	font-size: 100%;
+	font-family: "raleway";
+	font-weight: normal;
+	line-height: 1em;
+	color: #3b3b3b;
+	background: url(../images/gjc-bodyBkg.jpg) #e7e2dc;
+}
+img
+{
+	border:0px;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+.clear{
+	clear: both;
+}
+.clearfix{
+	display: block;
+}
+*:focus {
+    outline: 0;
+	
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.container{
+	width: 950px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* header */
+#header{
+	width: 100%;
+	margin: 0 0 35px 0;
+	background-color: #2d2929;
+}
+.topBar{
+	width: 100%;
+	height: 34px;
+	padding: 5px 0 0 0;
+	border-bottom: 1px solid #393534;
+	background-color: #231f20;
+}
+.headerInner{
+	padding: 15px 0 0 0;
+	color: #a09c99;
+}
+.logo{
+	float: left;
+	height: 90px;
+}
+.napWrapper{
+	float: right;
+	margin-top: 50px;
+	z-index: 999;
+}
+.napWrapper>ul{
+	text-align: center;
+}
+.napWrapper>ul>li{
+	position: relative;
+	display: inline-block;
+}
+.napWrapper>ul>li>a{
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #a29f9a;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 20px;
+}
+.napWrapper>ul>li:hover>a{
+	color: #FFF;
+}
+.napWrapper .subMenu{
+	display: none;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    background-color: #231f20;
+    border: 1px solid #3a3534;
+    z-index: 999;
+}
+.napWrapper .subMenu li{
+	border-top: 1px solid #3a3534;
+}
+.napWrapper .subMenu li:first-child{
+	border-top: none;
+}
+.napWrapper .subMenu li a{
+	font-size: 1em;
+	font-weight: normal;
+	color: #a29f9a;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 20px;
+}
+.napWrapper .subMenu li:hover a{
+	color: #FFF;
+}
+.napWrapper li:hover .subMenu{
+	display: block;
+}
+
+
+/* main */
+.topBanner img{
+	display: block;
+	max-width: 100%;
+	border: 10px solid #FFF;
+	box-sizing: border-box;
+}
+.left-center-main{
+	float: left;
+	padding: 20px 10px;
+	width: 60%;
+	height: auto;
+}
+.left-center-main p{
+	color: #3a3534;
+	font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+}
+.right-center-main{
+	float: right;
+	height: auto;
+	padding: 20px 0 20px 10px;
+}
+.right-center-main img{
+	border: 10px solid #FFF;
+	max-width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
