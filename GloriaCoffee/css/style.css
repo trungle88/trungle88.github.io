@@ -426,3 +426,71 @@ ul.productTab li.active{
 	padding: 7px 10px;
 	display: inline-block;
 }
+
+
+/* product Detail */
+.modProductInfo{
+
+}
+.modProductInfoLeft{
+	float: left;
+	width: 50%;
+}
+.modProductInfoLeft h3{
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #8b806f;
+	border-bottom: 1px dotted #afa089;
+	padding: 0 0 10px 0;
+	text-transform: uppercase;
+	margin: 0;
+}
+.modProductInfoDesc p{
+	font-size: 0.8em;
+    line-height: 1.6em;
+    margin: 10px 0;
+}
+.modProductInfoLink{
+
+}
+.modProductInfoLink h4{
+	color: #544c45;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+.modProductInfoPanel{
+	
+}
+.modProductInfoPanel table tr:nth-child(odd){
+	background: #FFF;
+}
+.modProductInfoPanel table tr:nth-child(even){
+	background: #E3DFD6;
+}
+.serving td{
+	padding-bottom: 20px;
+}
+.modProductInfoPanel table tr td{
+	padding: 3px;
+    padding-right: 6px;
+    font-size: 0.8125em;
+    line-height: 1.6em;
+}
+.modProductInfoPanel table tr th{
+	padding: 3px;
+    padding-right: 6px;
+    font-size: 0.8125em;
+    line-height: 1.6em;
+    font-weight: bold;
+    color: #7B6857;
+    background-color: #ffffff;
+}
+
+.modProductInfoRight{
+	float: right;
+	width: 50%;
+}
+.modProductInfoRight img{
+	max-width: 100%;
+}
