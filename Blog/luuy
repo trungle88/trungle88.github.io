@@ -165,3 +165,44 @@
 		- animation-timing-function:ease-in : khởi đầu chậm.
 		- animation-timing-function:ease-out : kết thúc chậm.
 		- animation-timing-function:ease-in-out : khởi đầu và kết thúc đều chậm.
+
+
+/* JAVASCRIPT */
+
+* Alert: Hiển thị lên 1 hộp thoại thông báo trên trình duyệt.
+* Console.log(): Tương tự như Alert nhưng chỉ hiện thị trong màn hình console.
+* JS có thể hiển thị dữ liệu bằng nhiều cách khác nhau:
+	+ innerHTML : viết trong 1 phần tử HTML.(document.getElementById(id).innerHTML)(id:định nghĩa phần tử HTML,innerHTML:định nghĩa nội dung HTML).
+	+ document.write() : viết trong 1 đầu ra HTML.
+	+ window.alert() : Viết vào 1 hộp cảnh báo.
+	+ console.log() : viết vào bảng console.
+* Các câu lệnh JS bao gồm: Values(giá trị),Operator(Toán tử),Expressions(Biểu thức),Keywords(từ khóa) và comments().
+* Biến: Nơi lưu trữ giá trị dữ liệu.
+	+ JS sử dụng từ khóa var để khai báo biến.
+	+ Quy tắc đặt tên biến trong JS:
+		- Chứa các ký tự chữ,số,_ và $.
+		- Ký tự đầu tiên không được là số(nên là chữ).
+		- Có phân biệt hoa thường.
+		- Không trùng với các từ khóa của JS:For,While,This,....
+		- Nên đặt tên theo kiểu snake_case hoặc camelCase nếu tên biến có độ dài 2 từ trở lên cho dễ đọc.
+
+	+ Cú pháp viết tắt khi gán giá trị cho biến nếu biến có kiểu dữ liệu số:
+		- x=x+1 --> x++
+		- x=x-1 --> x--
+		- x=x+5 --> x+=5
+		- x=x-5 --> x-=5
+		- x=x/5 --> x/=5
+		- x=x*5 --> x*=5
+
+* Keywords JS:
+	+ break : kết thúc 1 switch(chuyển đổi) hoặc 1 loop(vòng lặp).
+	+ continue : Nhảy khỏi vòng lặp và bắt đầu lại từ đầu.
+	+ debugger : Ngừng thực hiện JS,gọi các chức năng gỡ lỗi.
+	+ do...while : Thực hiện 1 khối lệnh,lặp lại khối trong khi điều kiện là đúng.
+	+ for : Đánh dấu 1 khối lệnh để thực hiện,miễn có 1 điều kiện là đúng.
+	+ function : Khai báo 1 hàm.
+	+ if...else : Đánh dấu 1 khối lệnh để thực hiện,tùy thuộc vào điều kiện.
+	+ return : Thoát khỏi hàm.
+	+ switch : Đánh dấu 1 khối lệnh để thực hiện,tùy thuộc các trường hợp khác nhau.
+	+ try...catch : Thực hiện xử lý lỗi đối với 1 khối các câu lệnh.
+	+ var : Khai báo 1 biến.
