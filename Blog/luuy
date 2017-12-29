@@ -227,3 +227,24 @@
 		- Để copy 1 mảng dùng phương thức slice().
 		- Với Object, chúng ta có thể khai báo theo kiểu function tương tự như Class ở các ngôn ngữ khác để có thể tái sử dụng các thuộc tính và phương thức.
 		- Trong khi trao đổi dữ liệu giữa các ngôn ngữ khác nhau, người ta thường sử dụng 1 kiểu dữ liệu gọi là JSON (JavaScript Object Notation) dựa trên object trong Javascript.
+
+* Functions(Hàm): Là 1 khối mã được thiết kế để thực hiện 1 công việc cụ thể.
+	+ Cú pháp :
+		function name_of_function(var1,var2,var3...){
+			//code
+		}
+		- function: Từ khóa bắt buộc.
+		- name_of_function: tên hàm.
+		- var1,var2....: tham số truyền vào hàm.
+	+ Tên hàm có thể chứa ký tự,số,gạch dưới và ký tự $.
+	+ Trong ngoặc đơn có thể chứa tên tham số phân cách bởi dấu phẩy.
+	+ Mã được thực hiện bởi hàm,đặt bên trong ngoặc nhọn.
+	+ Hàm được gọi khi : 
+		- Khi sự kiện xảy ra.
+		- Được gọi từ JS.
+		- Tự động.
+	+ Return Function: 
+		- Khi JS đạt tới câu lệnh return,hàm sẽ ngừng thực hiện.
+		- Nếu hàm được gọi từ 1 câu lệnh,JS sẽ Return để thực thi mã sau câu lệnh được gọi.
+		- Hàm thường tính toán 1 giá trị trả về.
+
