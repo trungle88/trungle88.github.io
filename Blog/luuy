@@ -179,6 +179,7 @@
 * Các câu lệnh JS bao gồm: Values(giá trị),Operator(Toán tử),Expressions(Biểu thức),Keywords(từ khóa) và comments().
 * Biến: Nơi lưu trữ giá trị dữ liệu.
 	+ JS sử dụng từ khóa var để khai báo biến.
+
 	+ Quy tắc đặt tên biến trong JS:
 		- Chứa các ký tự chữ,số,_ và $.
 		- Ký tự đầu tiên không được là số(nên là chữ).
@@ -206,3 +207,23 @@
 	+ switch : Đánh dấu 1 khối lệnh để thực hiện,tùy thuộc các trường hợp khác nhau.
 	+ try...catch : Thực hiện xử lý lỗi đối với 1 khối các câu lệnh.
 	+ var : Khai báo 1 biến.
+
+* Data Type(kiểu dữ liệu) : 
+	+ Các biến JS có thể chứa nhiều loại dữ liệu : numbers(số),string(chuỗi),object(đối tượng)...
+	+ Khi thêm 1 số và 1 chuỗi,JS sẽ coi số là 1 chuỗi.
+	+ JS đánh giá các biểu thức từ trái sang phải.
+	+ JS là 1 kiểu Dynamic(động): cùng 1 biến có thể được sử dụng để chứa các kiểu dữ liệu khác nhau.
+	+ Số có thể chia làm 2 loại: 
+		- Interger(số nguyên)
+		- Float(số thập phân): dùng dấm chấm chứ k dùng dấu phẩy.
+	+ 1 phép toán số học k hợp lệ sẽ trả về dữ liệu là NaN(NOT A NUMBER),kiểu dữ liệu là number.
+	+ Ký tự ngoặc đơn hoặc ngoặc kép là ký tự đặc biệt dùng để tạo ra chuỗi, cho nên nếu trong 1 chuỗi có chứa ký tự ngoặc đơn thì chúng ta dùng ngoặc kép để tạo chuỗi và ngược lại.Ngoài ra chúng ta có thể thêm ký tự  \  đằng trước để đánh dấu rằng đây là ký tự đặc biệt cần hiển thị (escape character).
+	+ Khi một biến được khai báo mà chưa gán giá trị, nó sẽ có kiểu là undefined. Trong trường hợp một biến đã có giá trị và chúng ta muốn bỏ giá trị đó đi ta dùng kiểu dữ liệu là null chứ không gán lại thành undefined.
+	+ Từ Khóa typeof : xác định kiểu của 1 biến.
+	+ Array(mảng):
+		- Trong 1 mảng số thứ tự bắt đầu tính từ 0.
+		- Khi sử dụng typeof với 1 array chúng ta sẽ nhận được kết quả là "object" do array cũng là 1 object trong Javascript.Để kiểm tra 1 biến có phải là array hay không chúng ta sử dụng phương thức isArray().
+		- Array và Object là 2 kiểu dữ liệu đặc biệt,nó có thuộc tính tham chiếu nên sẽ không thể sao chép như biến thông thường.
+		- Để copy 1 mảng dùng phương thức slice().
+		- Với Object, chúng ta có thể khai báo theo kiểu function tương tự như Class ở các ngôn ngữ khác để có thể tái sử dụng các thuộc tính và phương thức.
+		- Trong khi trao đổi dữ liệu giữa các ngôn ngữ khác nhau, người ta thường sử dụng 1 kiểu dữ liệu gọi là JSON (JavaScript Object Notation) dựa trên object trong Javascript.
