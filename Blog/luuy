@@ -239,26 +239,6 @@
 		- Với Object, chúng ta có thể khai báo theo kiểu function tương tự như Class ở các ngôn ngữ khác để có thể tái sử dụng các thuộc tính và phương thức.
 		- Trong khi trao đổi dữ liệu giữa các ngôn ngữ khác nhau, người ta thường sử dụng 1 kiểu dữ liệu gọi là JSON (JavaScript Object Notation) dựa trên object trong Javascript.
 
-* Functions(Hàm): Là 1 khối mã được thiết kế để thực hiện 1 công việc cụ thể.
-	+ Cú pháp :
-		function name_of_function(var1,var2,var3...){
-			//code
-		}
-		- function: Từ khóa bắt buộc.
-		- name_of_function: tên hàm.
-		- var1,var2....: tham số truyền vào hàm.
-	+ Tên hàm có thể chứa ký tự,số,gạch dưới và ký tự $.
-	+ Trong ngoặc đơn có thể chứa tên tham số phân cách bởi dấu phẩy.
-	+ Mã được thực hiện bởi hàm,đặt bên trong ngoặc nhọn.
-	+ Hàm được gọi khi : 
-		- Khi sự kiện xảy ra.
-		- Được gọi từ JS.
-		- Tự động.
-	+ Return Function: 
-		- Khi JS đạt tới câu lệnh return,hàm sẽ ngừng thực hiện.
-		- Nếu hàm được gọi từ 1 câu lệnh,JS sẽ Return để thực thi mã sau câu lệnh được gọi.
-		- Hàm thường tính toán 1 giá trị trả về.
-
 * Lệnh if...else :
 	+ Lệnh if : Cho phép JS điều khiển luồng và thực thi các lệnh theo điều kiện.
 		- Cú pháp : if(expression){
@@ -303,4 +283,66 @@
 				   default: statement(s)
 				}
 				Lệnh break chỉ dẫn phần cuối của mỗi trường hợp cụ thể. Nếu chúng bị bỏ quên, bộ thông dịch sẽ tiếp tục thực thi mỗi lệnh trong mỗi trường hợp sau.
+
+* Vòng lặp While : Thực thi 1 lệnh hoặc khối code lặp đi lặp lại miễn là expression-biểu thức là true.1 khi biểu thức trở thành false,vòng lặp kết thúc.
+	- Cú pháp : while (expression){
+   					Statement(s) to be executed if expression is true
+				}
+
+* Vòng lặp do...while : Tương tự như while ngoại trừ việc kiểm tra điều kiện xảy ra ở phần cuối vòng lặp.Có nghĩa vòng lặp sẽ luôn luôn được thực thi ít nhất 1 lần,ngay cả khi điều kiện là false.
+	- Cú pháp : do{
+   					Statement(s) to be executed;
+				} while (expression);
+
+* Vòng lặp for : Bao gồm 3 phần quan trọng :
+	- Khởi tạo vòng lặp - initialization : Khởi tạo phép tính tới 1 giá trị bắt đầu.được thực thi trước khi vòng lặp bắt đầu.
+	- Kiểm tra lệnh - test statement : kiểm tra 1 điều kiện đã cho là true hoặc không.Nếu là true,code bên trong vòng lặp sẽ được thực thi.Nếu false thì điều khiển sẽ thoát khỏi vòng lặp.
+	- Lệnh lặp lại - iteration statement : Tăng hoặc giảm phép tính.
+
+	- Cú pháp:
+		for(initialization ; test condition ; iteration statement){
+			Statement(s) to be executed if test condition is true
+		}
+
+* Vòng lặp for...in : Dùng để lặp qua các thuộc tính của 1 đối tượng.
+	- Cú pháp : for(variablename in object){
+		statement or block to execute
+	}
+	- Trong mỗi vòng lặp,1 thuộc tính object-đối tượng được gán tới variablename-tên biến và vòng lặp này tiếp tục tới khi hết tất cả thuộc tính của đối tượng.	
+
+* Điều khiển vòng lặp trong JS:
+	- Lệnh Break: Được sử dụng để thoát sớm ra khỏi 1 vòng lặp mà không quan tâm đến điều kiện lặp.
+	- lệnh Continue : Bỏ qua 1 bước lặp nào đó,khi gặp lệnh continue thì tất cả những đoạn code nằm bên dưới sẽ k được thực hiện mà nó sẽ nhảy qua vòng lặp mới luôn.
+
+* Functions(Hàm): Là 1 khối mã được thiết kế để thực hiện 1 công việc cụ thể.
+	+ Cú pháp :
+		function functionName(parameter-list){
+			statement
+		}
+		- function : Từ khóa bắt buộc.
+		- functionName : tên hàm.
+		- parameter-list : tham số truyền vào hàm.
+
+	+ Tên hàm có thể chứa ký tự,số,gạch dưới và ký tự $.
+	+ Trong ngoặc đơn có thể chứa tên tham số phân cách bởi dấu phẩy.
+	+ Mã được thực hiện bởi hàm,đặt bên trong ngoặc nhọn.
+	+ Hàm được gọi khi : 
+		- Khi sự kiện xảy ra.
+		- Được gọi từ JS.
+		- Tự động.
+	+ Return Function: 
+		- Khi JS đạt tới câu lệnh return,hàm sẽ ngừng thực hiện.
+		- Nếu hàm được gọi từ 1 câu lệnh,JS sẽ Return để thực thi mã sau câu lệnh được gọi.
+		- Hàm thường tính toán 1 giá trị trả về.
+
+	+ Function() Constructor Trong JS:
+		- Cú Pháp : var variablename = new Function(Arg1,Arg2...,"Function body");
+
+		- Ghi nhớ rằng Function() constructor không được truyền bất kỳ tham số nào mà xác định tên cho hàm nó tạo. Các hàm unnamed được tạo với Function() constructor được gọi là các hàm nặc danh.
+
+	+ Function Literal - Hằng số hàm : Biểu thức mà định nghĩa 1 hàm không đặt tên.
+		- Cú pháp :
+			var variablename = function(Argument List){
+				Function Body
+			}
 
