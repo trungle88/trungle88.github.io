@@ -180,9 +180,14 @@
 * Biến: Nơi lưu trữ giá trị dữ liệu.
 	+ JS sử dụng từ khóa var để khai báo biến.
 
+	+ Biến JS chỉ có 2 phạm vi:
+		- Biến Global : có phạm vi chung,nghĩa là nó có thể được định nghĩa bất cứ đâu trong JS Code.
+		- Biến Local : Sẽ chỉ nhìn thấy trong 1 hàm,nơi nó được định nghĩa.Các tham số hàm luôn luôn là nội bộ cho hàm đó.
+		- Trong thân 1 hàm,1 biến Local có quyền ưu tiên cao hơn biến Global với cùng 1 tên.
+
 	+ Quy tắc đặt tên biến trong JS:
 		- Chứa các ký tự chữ,số,_ và $.
-		- Ký tự đầu tiên không được là số(nên là chữ).
+		- Ký tự đầu tiên không được là số(nên là chữ hoặc gạch dưới).
 		- Có phân biệt hoa thường.
 		- Không trùng với các từ khóa của JS:For,While,This,....
 		- Nên đặt tên theo kiểu snake_case hoặc camelCase nếu tên biến có độ dài 2 từ trở lên cho dễ đọc.
@@ -194,6 +199,12 @@
 		- x=x-5 --> x-=5
 		- x=x/5 --> x/=5
 		- x=x*5 --> x*=5
+
+* Toán Tử (Operator):
+	+ Toán tử điều kiện : Đầu tiên tính toán 1 biểu thức để xem nó là True hay False và sau đó thực thi 1 trong 2 lệnh đã cung cấp phụ thuộc vào kết quả của sự tính toán.
+		- Cú pháp : 	? : (Điều kiện )
+						Nếu điều kiện là true ? Thì giá trị X : Nếu không thì giá trị Y
+	+ Toán tử typeof : 1 toán tử 1 ngôi mà được đặt trước toán hạng đơn của nó,mà có thể là bất cứ kiểu nào.giá trị của nó là 1 chuỗi chỉ dẫn kiểu dữ liệu của toán hạng.
 
 * Keywords JS:
 	+ break : kết thúc 1 switch(chuyển đổi) hoặc 1 loop(vòng lặp).
@@ -247,4 +258,49 @@
 		- Khi JS đạt tới câu lệnh return,hàm sẽ ngừng thực hiện.
 		- Nếu hàm được gọi từ 1 câu lệnh,JS sẽ Return để thực thi mã sau câu lệnh được gọi.
 		- Hàm thường tính toán 1 giá trị trả về.
+
+* Lệnh if...else :
+	+ Lệnh if : Cho phép JS điều khiển luồng và thực thi các lệnh theo điều kiện.
+		- Cú pháp : if(expression){
+			Statement(s) to be executed if expression is true
+		}
+
+	+ Lệnh if...else : Cho phép JS thực thi các lệnh trong 1 cách được điều khiển hơn.
+		- Cú pháp : if(expression){
+			Statement(s) to be executed if expression is true
+		}
+		else{
+			Statement(s) to be executed if expression is false
+		}
+
+	+ Lệnh if...else...if : Cho phép JS tạo 1 quyết định chính xác trong 1 điều kiện.
+		- Cú pháp : if (expression 1){
+   			Statement(s) to be executed if expression 1 is true
+		}
+		else if (expression 2){
+   			Statement(s) to be executed if expression 2 is true
+		}
+		else if (expression 3){
+   			Statement(s) to be executed if expression 3 is true
+		}
+		else{
+   			Statement(s) to be executed if no expression is true
+		}
+
+* Lệnh Switch-case : Cung cấp một biểu thức để ước lượng và một số lệnh khác nhau để thực thi trên cơ sở giá trị của biểu thức. Bộ thông dịch kiểm tra mỗi case – trường hợp với giá trị của biểu thức tới khi tìm thấy một sự so khớp. Nếu không có so khớp nào, một điều kiện default – mặc định sẽ được sử dụng.
+	- Cú pháp : switch (expression)
+				{
+				   case condition 1: statement(s)
+				   break;
+				   
+				   case condition 2: statement(s)
+				   break;
+				   ...
+				   
+				   case condition n: statement(s)
+				   break;
+				   
+				   default: statement(s)
+				}
+				Lệnh break chỉ dẫn phần cuối của mỗi trường hợp cụ thể. Nếu chúng bị bỏ quên, bộ thông dịch sẽ tiếp tục thực thi mỗi lệnh trong mỗi trường hợp sau.
 
