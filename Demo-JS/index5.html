@@ -4,6 +4,15 @@
 	<title>JS-Vòng lặp for...in</title>
 </head>
 <body>
-	>
+	<script type="text/javascript">
+		function loop(x){
+		  if(x<= 1){
+		     return x;
+		  }
+		  return x * loop(x-1);
+		}
+		var n = loop(5);
+		document.write(n);
+	</script>
 </body>
 </html>
