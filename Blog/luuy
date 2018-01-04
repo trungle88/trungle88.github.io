@@ -346,3 +346,13 @@
 				Function Body
 			}
 
+* Event - sự kiện trong JS : Khi một trang tải, nó được gọi là một sự kiện (Event). Khi người sử dụng click vào một nút, thì click đó cũng là một sự kiện. Các ví dụ về sự kiện khác như nhấn một phím, đóng một cửa sổ, tăng giảm cửa sổ, …
+
+* Hộp thoại - Alert,Prompt,Confirmation trong JS: Được sử dụng để thông báo,xác nhận input,hoặc nhận input từ người dùng.
+
+	+ Hộp thoại thông báo(Alert) : Cảnh báo tới người dùng.
+
+	+ Hộp thoại xác nhận(Confirmation) : Nhận sự đồng ý của người dùng trên bất cứ tùy chọn nào.Nó hiển thị với 2 nút:OK và Cancel.Nếu người dùng click vào nút OK, phương thức confirm() sẽ trả về true. Nếu người dùng click nút Cancel, thì confirm() trả về false.
+
+	+ Hộp thoại gợi ý(Prompt) : pop-up một hộp văn bản để nhận input từ người dùng. Vì thế, nó cho bạn khả năng tương tác với người dùng. Người dùng cần điền thông tin vào trường đó và sau đó nhấn OK.Hộp thoại này được hiển thị bởi sử dụng một phương thức là prompt() mà nhận hai tham số: (i) Một label mà bạn muốn hiển thị trong hộp văn bản và (ii) Một chuỗi mặc định để hiển thị trong hộp văn bản.Hộp thoại này có hai nút: OK và Cancel. Nếu người dùng nhấn vào nút OK, phương thức prompt() sẽ trả về giá trị đã nhập từ hộp văn bản. Nếu người dùng nhấn nút Cancel, phương thức prompt() trả về null.
+
