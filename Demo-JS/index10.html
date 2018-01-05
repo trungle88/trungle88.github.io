@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lệnh Switch...case</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var a = prompt("nhập vào số a ");
+		// a = parseInt(a);
+		// var num = (a%2);	
+		// switch(num){
+		// 	case 0 :{
+		// 		document.write("là số chẵn");
+		// 		break;
+		// 	}
+		// 	case 1 :{
+		// 		document.write("là số lẻ");
+		// 		break;
+		// 	}
+		// 	default :{
+		// 		document.write("bạn nhập không phải dạng số")
+		// 	}
+		// }
+		
+
+
+		// var color = prompt("nhập vào màu cần kiểm tra");
+		// switch(color){
+		// 	case 'red': {
+		// 		document.write("bạn vừa nhập vào màu đỏ.Ok");
+		// 		break;
+		// 	}
+		// 	case 'yellow': {
+		// 		document.write("bạn vừa nhập vào màu vàng.ok");
+		// 		break;
+		// 	}
+		// }
+		
+		
+
+		//Tìm thứ trong tuần
+		//Từ khóa new Date() : tạo mới đối tượng date
+		var date = new Date();//lấy ngày hiện tại thông qua đối tượng Date
+		// hàm getDate() : trả về 1 số từ 0-6.
+		var current_day = date.getDate(); //lấy số thứ tự ngày hiện tại
+		//lưu tên của thứ :
+		var day_name = '';
+		//lấy tên thứ của ngày hiện tại:
+		switch(current_day){
+			case 0:
+				day_name = "chủ nhật";
+				break;
+			case 1:
+				day_name = "thứ Hai";
+				break;
+			case 2:
+				day_name = "thứ ba";
+				break;
+			case 3:
+				day_name = "thứ tư";
+				break;
+			case 4:
+				day_name = "thứ năm";
+				break;
+			case 5:
+				day_name = "thứ sáu";
+				break;
+			case 6:
+				day_name = "thứ bảy";
+				break;
+		}
+		document.write(day_name);
+
+		//tìm tên trái cây trong kho hàng
+		
+		//nhập mã trái cây :
+		var code = prompt("nhập mã trái cây", 0);
+		//Biến lưu trữ thông báo :
+		var message = '';
+		//lấy tên trái cây ;
+		switch(code){
+			case '1':
+				message = "Đu đủ";
+				break;
+			case '2':
+				message = "Xoài";
+				break;
+			case '3':
+				message = 'Mít';
+				break;
+			case '4':
+				message = 'Nhãn';
+				break;
+			case '5':
+				message = 'Chôm chôm';
+				break;
+			case '6':
+				message = 'Sầu riêng';
+				break;
+			case '7':
+				message = 'Hồng xiêm';
+				break;
+			case '8':
+				message = 'Dừa';
+				break;
+			case '9':
+				message = 'Dưa';
+				break;
+			default :
+				message = "Không tìm thấy trái cây";
+		}
+		document.write(message);
+	</script>
+</body>
+</html>
