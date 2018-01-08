@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vòng Lặp While - do While</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1. while lặp từ 1 đến 10:
+		// var i = 1;
+		// while(i <= 10){
+		// 	document.write(i + "<br/>");
+		// 	i++; // Tăng i lên nếu k sẽ bị lặp vô hạn
+		// }
+		// 2. while in các số từ 1 --> 100
+		
+		// var i = 1;
+		// while(i <= 100){
+		// 	document.write(i + "<br/>");
+		// 	i++;
+		// }
+
+		// 3. do...while in các số từ 1 -->100
+		
+		// var i = 1;
+		// do{
+		// 	document.write(i + "-");
+		// 	i++;
+		// }while(i <= 100);
+
+
+		// 4. dùng for n các số lẻ từ 0 --> 100
+		 // var i;
+		 // for(i = 0;i <= 100;i++){
+		 // 	if (i%2 != 0) {
+		 // 		document.write(i + "-");
+		 // 	}
+		 // }
+
+		 // 5. dùng while in các số lẻ
+		  // var i = 0;
+		  // while(i <= 100){
+		  // 	if (i%2 != 0) {
+		  // 		document.write(i + "<br/>");
+		  // 	}
+		  // 	i++;
+		  // }
+		  
+		  // 6. tính n giai thừa
+		   var n;
+		   n = prompt("nhập vào n:");
+		   n = parseInt(n);
+		   function loop(n){
+		   	if(n <= 1){
+		   		return n;
+		   	}
+		   	return n*loop(n-1);
+		   }
+		   document.write(loop(n));
+
+	</script>
+
+</body>
+</html>
