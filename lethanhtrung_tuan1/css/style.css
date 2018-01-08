@@ -1,0 +1,143 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+	font-size: 10px;
+	font-family: "segoeui";
+}
+*{
+	box-sizing: border-box;
+}
+img
+{
+	border:0px;
+	max-width: 100%;
+	
+}
+.clear{
+	clear: both;
+}
+*:focus {
+    outline: 0;
+	
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.container{
+	width: 1110px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*header */
+#header{
+	background-color: #090b1e ;
+	max-width: 100%;
+	height: 1000px;
+}
+.navBar{
+	height: 100px;
+	position: relative;
+}
+.navBar .logo{
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+.buy_now{
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+.buy_now a{
+	background: url(../images/bg_buynow.png) no-repeat right center;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 30px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.buy_now:hover a{
+	color: #fb3068;
+}
+.navigator{
+	position: absolute;
+	right: 130px;
+	top: 40px;
+}
+.navigator ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 20px;
+}
+.navigator ul li a{
+	color: #d2d2d2;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+.navigator ul li.active a{
+	border-bottom: 1px solid #d2d2d2;
+	color: #FFF;
+	padding: 5px 0;
+
+}
+.navigator ul li:hover a{
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+	padding: 5px 0;
+}
+
+.banner{
+	padding: 100px 0;
+	display: block;
+}
+.order{
+	width: 50%;
+	float: left;
+	padding: 120px 0;
+}
+.order h1{
+	color:  #f9257f;
+	font-size: 120px;
+	font-weight: bold;
+	margin: 0;
+}
+.order h4{
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0;
+	letter-spacing: 18px;
+}
+.order p{
+	color: #FFF;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: justify;
+	margin: 50px 0;
+}
+.order_now{
+	background: url(../images/bg_order_now.png) repeat-y;
+	color: #d2d2d2;
+	font-size: 16px;
+	padding: 20px 40px;
+	border-radius: 5px;
+	display: inline-block;
+}
+.order_now:hover{
+	color: #FFF;
+}
+
+.product_banner{
+	float: right;
+	max-width: 50%;
+}
