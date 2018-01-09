@@ -40,7 +40,7 @@ ul,ol{
 #header{
 	background-color: #090b1e ;
 	max-width: 100%;
-	height: 1000px;
+	min-height: 1000px;
 }
 .navBar{
 	height: 100px;
@@ -95,7 +95,11 @@ ul,ol{
 	color: #FFF;
 	padding: 5px 0;
 }
-
+.navigator ul li:visited a{
+	border-bottom: 1px solid #FFF;
+	color: #FFF;
+	padding: 5px 0;
+}
 .banner{
 	padding: 100px 0;
 	display: block;
@@ -105,11 +109,9 @@ ul,ol{
 	float: left;
 	padding: 120px 0;
 }
-.order h1{
-	color:  #f9257f;
-	font-size: 120px;
-	font-weight: bold;
-	margin: 0;
+.order .ipx{
+	margin-bottom: 20px;
+	display: block;
 }
 .order h4{
 	color: #FFF;
@@ -141,3 +143,26 @@ ul,ol{
 	float: right;
 	max-width: 50%;
 }
+/* end header */
+
+/* start Main */
+
+.main{
+
+}
+.features{
+	background-image: url(../images/bg_features.png);
+	background-repeat: no-repeat;
+	background-position: left -145px top 230px;
+	background-color: #FFF;
+	min-height: 638px;
+
+}
+.features_child{
+	background-image: url(../images/bg_features_child.png);
+	background-repeat: no-repeat;
+	background-position: center 220px;
+	min-height: 700px;
+}
+
+/* end main */
