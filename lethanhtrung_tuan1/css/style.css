@@ -4,7 +4,7 @@ body
 	padding:0px;
 	background-color:#fff;
 	font-size: 10px;
-	font-family: "segoeui" !important;
+	font-family: "segoeui";
 }
 *{
 	box-sizing: border-box;
@@ -17,6 +17,7 @@ img
 }
 .clear{
 	clear: both;
+	float: none !important;
 }
 *:focus {
     outline: 0;
@@ -31,7 +32,8 @@ ul,ol{
 	list-style: none;
 }
 .container{
-	width: 100%;
+	width: 1110px;
+	padding: 0 30px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -91,7 +93,7 @@ ul,ol{
 
 }
 .navigator ul li:hover a{
-	border-bottom: 1px solid #FFF !important;
+	border-bottom: 1px solid #FFF;
 	color: #FFF;
 	padding: 5px 0;
 	text-decoration: none;
@@ -155,16 +157,101 @@ ul,ol{
 .features{
 	background-image: url(../images/circle.png);
 	background-repeat: no-repeat;
-	background-position: left -145px top 230px;
+	background-position: 0 230px;
 	background-color: #FFF;
 	min-height: 638px;
 
 }
 .features_child{
+		min-height: 700px;
+}
+.features_child h1{
+	text-align: center;
+	color: #181818;
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 100px;
+	margin-bottom: 0;
+}
+.features_child ul.why_ipx{
 	background-image: url(../images/bg_features_child.png);
 	background-repeat: no-repeat;
-	background-position: center 220px;
-	min-height: 700px;
+	background-position: center top;
+	margin-top: 80px;
+}
+.why_ipx li{
+	float: left;
+    width: 50%;
+    text-align: right;
+    padding-right: 23%;
+    background-repeat: no-repeat;
+    padding-top: 50px;
 }
 
+.why_ipx li:nth-child(2n){
+	float: right;
+	text-align: left;
+	padding-left: 20%;
+	padding-right: 0;
+}
+.why_ipx li:nth-child(1){
+	background-image: url(../images/pipe_left.png);
+	background-position: 80% 30px ;
+	padding-top: 73px;
+}
+.why_ipx li:nth-child(1) h5.title_why_ipx{
+	background: #FFF;
+}
+.why_ipx li:nth-child(2){
+	background-image: url(../images/pipe3_right.png);
+	padding-top: 73px;
+	background-position: 14% 30px ;
+}
+.why_ipx li:nth-child(3){
+	background-image: url(../images/pipe1_left.png);
+	background-position: 80% 68px ;
+}
+.why_ipx li:nth-child(4){
+	background-image: url(../images/pipe4_right.png);
+	background-position: 14% 68px ;
+}
+.why_ipx li:nth-child(5){
+	background-image: url(../images/pipe2_left.png);
+	background-position: 80% 70px ;
+}
+.why_ipx li:nth-child(6){
+	background-image: url(../images/pipe5_right.png);
+	background-position: 14% 70px ;
+}
+.why_ipx li h5.title_why_ipx{
+	color: #181818;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 30px;
+    position: relative;
+	padding-right: 35px;
+}
+.why_ipx li h5.title_why_ipx:after{
+	content: "";
+	background: #FFF;
+	width: 35px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.why_ipx li:nth-child(2n) h5.title_why_ipx{
+	background: #FFF;
+	padding-left: 35px;
+}
+.why_ipx li:nth-child(2n) p{
+	background: #FFF;
+	padding-left: 35px;
+}
+.why_ipx li p{
+	color: #444444;
+	font-size: 16px;
+	padding-right: 35px;
+}
 /* end main */
