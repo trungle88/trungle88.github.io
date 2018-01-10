@@ -261,7 +261,7 @@ ul,ol{
 .wireless{
 	background-image: url(../images/bg_ipx_wireless.png) , url(../images/bg_x_wireless.png);
 	background-repeat: no-repeat , no-repeat;
-	background-position: right center , left 520px;
+	background-position: 1128px center , left 520px;
 	background-color: #090b1e;
 }
 .connectivity_wireless{
@@ -289,15 +289,15 @@ ul,ol{
 .security{
 	background-image: url(../images/bg_security.png),url(../images/bg_elipse_security.png) ;
 	background-repeat: no-repeat , no-repeat;
-	background-position: right 25px , 345px center;
+	background-position: 1430px 25px , 390px center;
 	background-color: #FFF;
 }
 .security_content{
 	float: right;
 	text-align: left;
-	width: 50%;
-	padding: 340px 0 240px 0;
-	margin-left: 80px;
+	max-width: 50%;
+	padding: 340px 0 340px 60px;
+
 }
 .security_content .title_securitu_content{
 	color: #181818;
@@ -327,7 +327,55 @@ ul,ol{
 	margin-top: 0;
 	margin-bottom: 65px;
 }
+.review_slide{
 
+}
+.review_slide ul.bxslider{
+	
+}
+.review_slide ul.bxslider li{
+	display: inline-block;
+	margin: 0 22px;
+	background: #FFF;
+	box-shadow: 0 10px 20px #f3f3f3;
+	-moz-box-shadow: 0 10px 20px #f3f3f3;
+	-webkit-box-shadow: 0 10px 20px #f3f3f3;
+	
+}
+.review_slide ul.bxslider li .job_review{
+	padding: 80px 70px;
+}
+.title_job_review{
+	margin-bottom: 30px;
+	padding: 0 140px;
+	display: inline-block;
+}
+.title_job_review .img_title_job_review{
+	float: left;
+	width: 40%;
+}
+.title_job_review .name_title_job_review{
+	float: left;
+	width: 60%;
+	color: #444444;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.title_job_review span{
+	float: left;
+	color: #181818;
+	font-size: 14px;
+}
+.intro_job_review{
+	
+}
+.intro_job_review p{
+	color: #444444;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+}
 /* end review */
 
 /* end main */
