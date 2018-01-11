@@ -382,13 +382,12 @@ ul,ol{
 /* end review */
 
 .video{
-	background-image: url(../images/bg_ipx_video.png) , url(../images/bg_video.png);
-	background-repeat: no-repeat , no-repeat;
-	background-position: center center , center center;
+	background-image: url(../images/bg_video.png);
+	background-repeat:  no-repeat;
+	background-position: center center;
 	height: 755px;
 	position: relative;
 	z-index: 999;
-	opacity: 2;
 }	
 .video iframe{
 	position: absolute;
@@ -396,7 +395,12 @@ ul,ol{
 	left: 30px;
 	border-radius: 50px;
 	z-index: 1;
-	opacity: 1;
+}
+.video img{
+	position: absolute;
+	top: 99px;
+	left: 2px;
+	z-index: 999;
 }
 /* end video */
 
