@@ -328,22 +328,25 @@ ul,ol{
 	margin-bottom: 65px;
 }
 .review_slide{
-
+	overflow: hidden;
 }
 .review_slide ul.bxslider{
-	
+	overflow: hidden;
+	max-height: 100%;
 }
 .review_slide ul.bxslider li{
 	display: inline-block;
-	margin: 0 22px;
+	margin: 0 25px;
 	background: #FFF;
+}
+.review_slide ul.bxslider li .job_review{
+	padding: 60px;
+	border: 1px solid #CCC;
 	box-shadow: 0 10px 20px #f3f3f3;
 	-moz-box-shadow: 0 10px 20px #f3f3f3;
 	-webkit-box-shadow: 0 10px 20px #f3f3f3;
-	
-}
-.review_slide ul.bxslider li .job_review{
-	padding: 80px 70px;
+	border-radius: 10px;
+	max-height: 380px;
 }
 .title_job_review{
 	margin-bottom: 30px;
@@ -377,5 +380,24 @@ ul,ol{
 	text-align: center;
 }
 /* end review */
+
+.video{
+	background-image: url(../images/bg_ipx_video.png) , url(../images/bg_video.png);
+	background-repeat: no-repeat , no-repeat;
+	background-position: center center , center center;
+	height: 755px;
+	position: relative;
+	z-index: 999;
+	opacity: 2;
+}	
+.video iframe{
+	position: absolute;
+	top: 137px;
+	left: 30px;
+	border-radius: 50px;
+	z-index: 1;
+	opacity: 1;
+}
+/* end video */
 
 /* end main */
