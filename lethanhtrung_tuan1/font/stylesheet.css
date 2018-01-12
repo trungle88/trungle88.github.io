@@ -1,4 +1,14 @@
 @font-face {
+	font-family: 'seguisb';
+	src: url('seguisb.eot');
+	src: url('seguisb.eot?#iefix') format('embedded-opentype'),
+		 url('seguisb.woff') format('woff'),
+		 url('seguisb.ttf') format('truetype'),
+		 url('seguisb.svg#OpenSans') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
 	font-family: 'segoeui';
 	src: url('segoeui.eot');
 	src: url('segoeui.eot?#iefix') format('embedded-opentype'),
@@ -6,5 +16,5 @@
 		 url('segoeui.ttf') format('truetype'),
 		 url('segoeui.svg#OpenSans') format('svg');
 	font-style: normal;
-	font-weight: 600;
+	font-weight: normal;
 }

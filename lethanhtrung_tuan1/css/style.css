@@ -4,7 +4,7 @@ body
 	padding:0px;
 	background-color:#fff;
 	font-size: 10px;
-	font-family: "segoeui";
+	font-family: "seguisb";
 }
 *{
 	box-sizing: border-box;
@@ -134,6 +134,7 @@ ul,ol{
 	line-height: 25px;
 	text-align: justify;
 	margin: 50px 0;
+	font-family: "segoeui";
 }
 .order_now{
 	background: url(../images/bg_order_now.png) repeat-y;
@@ -256,6 +257,7 @@ ul,ol{
 	font-size: 16px;
 	padding-right: 35px;
 	margin: 0;
+	font-family: 'segoeui';
 }
 /* end features */
 
@@ -284,6 +286,7 @@ ul,ol{
 	line-height: 30px;
 	margin-bottom: 25px;
 	margin-top: 0;
+	font-family: "segoeui";
 }
 /* end wireless */
 
@@ -312,6 +315,7 @@ ul,ol{
 	margin-bottom: 30px;
 	margin-top: 0;
 	line-height: 30px;
+	font-family: "segoeui";
 }
 
 /* end security */
@@ -377,6 +381,7 @@ ul,ol{
 	font-size: 16px;
 	line-height: 30px;
 	text-align: center;
+	font-family: "segoeui";
 }
 /* end review */
 
@@ -502,6 +507,7 @@ ul,ol{
 	line-height: 30px;
 	margin-top: 0;
 	margin-bottom: 40px;
+	font-family: "segoeui";
 }
 .connect_footer form{
 	position: relative;
@@ -551,6 +557,7 @@ ul,ol{
 .address_footer ul li a{
 	color: #FFF;
 	font-size: 14px;
+	font-family: "segoeui";
 }
 .address_footer ul li:hover a{
 	color: #f90487;
@@ -614,15 +621,18 @@ ul,ol{
 	font-size: 14px;
 	float: left;
 	margin: 0;
+	font-family: "segoeui";
 }
 .reserved_footer b{
 	font-weight: bold;
+	font-family: "seguisb";
 }
 .reserved_footer a{
 	color: #FFF;	
 	font-size: 14px;
 	float: left;
 	padding-left: 50px;
+	font-family: "segoeui";
 }
 .reserved_footer a:hover{
 	color: #f90487;
