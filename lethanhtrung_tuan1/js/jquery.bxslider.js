@@ -23,7 +23,7 @@
     ticker: false,
     tickerHover: false,
     adaptiveHeight: false,
-    adaptiveHeightSpeed: 500,
+    adaptiveHeightSpeed: 200,
     video: false,
     useCSS: true,
     preloadImages: 'visible',
@@ -67,7 +67,7 @@
 
     // AUTO
     auto: false,
-    pause: 4000,
+    pause: 2000,
     autoStart: true,
     autoDirection: 'next',
     stopAutoOnClick: false,
