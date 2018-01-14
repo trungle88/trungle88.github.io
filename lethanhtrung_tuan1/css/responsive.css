@@ -1,0 +1,65 @@
+@media screen and (max-width: 980px){
+
+}
+@media screen and (min-width : 768px){
+    .order{
+        width :40%;
+        padding :30px 0;
+    }
+    .order h4{
+        letter-spacing : 5px;
+    }
+    .order p{
+        margin : 40px 0;
+        line-height : 25px;
+    }
+    .features{
+        background-image : none;
+    }
+    .features_child .why_ipx li{
+        background-image : none;
+        padding-top: 750px;
+        padding-right: 0;
+    }
+    .why_ipx li:nth-child(3),.why_ipx li:nth-child(4),.why_ipx li:nth-child(5),.why_ipx li:nth-child(6){
+        padding-top: 30px;
+    }
+    .why_ipx li:nth-child(2),.why_ipx li:nth-child(4),.why_ipx li:nth-child(6){
+        padding-left: 0;
+    }
+    .features_child .why_ipx li h5.title_why_ipx ,
+    .features_child .why_ipx li h5.title_why_ipx:after {
+        background : none;
+        margin-bottom: 10px;
+    }
+    .features_child .why_ipx li p {
+        background : none;
+    }
+    .features_child .why_ipx li.clear {
+        padding-top: 0;
+        width:  auto;
+    }
+    .wireless{
+        background-position: 135% center, left 486px;
+        -webkit-background-size: auto 50%;
+        background-size: auto 50%;
+    }
+    .connectivity_wireless{
+        padding : 130px 0;
+        width : 60%;
+    }
+    .connectivity_wireless p{
+        line-height: 25px;
+    }
+    .connectivity_wireless .title_connectivity_wireless{
+        margin-bottom: 40px;
+    }
+    .security{
+        background-image: url(../images/bg_elipse_security.png);
+        background-position: 20px 70px;
+        background-size: auto 600px;
+    }
+    .security_content{
+        padding: 100px 0 100px 20px;
+    }
+}
