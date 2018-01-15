@@ -1,0 +1,38 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+	font-size: 10px;
+	font-family: "seguisb";
+}
+*{
+	box-sizing: border-box;
+}
+img
+{
+	border:0px;
+	max-width: 100%;
+
+}
+.clear{
+	clear: both;
+	float: none !important;
+}
+*:focus {
+    outline: 0;
+
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.container{
+	max-width : 1400px;
+	margin: 0 auto;
+	position: relative;
+}
