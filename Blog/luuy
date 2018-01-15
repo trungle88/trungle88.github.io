@@ -7,7 +7,7 @@
 * Thẻ <a> :
 	+ target : - _blank : mở 1 liên kết trong tab mới.
 			   - _self : Mặc định.
-			   - _parent : 
+			   - _parent :
 			   - _top :
 			   - framename :
 
@@ -64,7 +64,7 @@
 	+ Thông thường để căn chỉnh 1 phần tử ra giữa theo chiều ngang với inline (text, image) thì ta dùng text-align: center cho phần tử cha của nó, còn với block thì ta dùng margin: auto .
 
 * Position : Xác định thiết lập vị trí cho các phần tử trong HTML.
-	
+
 	+ Position:static : Mặc định.
 
 	+ Position:relative : Định vị tương đối so với vị trí bình thường của nó.
@@ -73,10 +73,10 @@
 
 	+ Position:absolute : Định vị tương đối với lớp cha gần nhất thay vì so với khung như mặc định.
 
-	+ Position:sticky : Định vị dựa trên vị trí cuộn của người dùng.	
+	+ Position:sticky : Định vị dựa trên vị trí cuộn của người dùng.
 
 	+ Khi sử dụng thuộc tính position với giá trị là absolute thì ta nên cho thẻ cha gần nhất làm mốc bằng cách đặt thuộc tính position: relative (có thể đặt bất kỳ position nào ngoài static tuy nhiên dùng relative sẽ ít ảnh hưởng đến layout).
-	
+
 	+ Khi sử dụng thuộc tính position với giá trị là absolute hoặc fixed, các phần tử sẽ đè lên nhau (theo trục z, hướng vuông góc với màn hình). Và để xác định mức độ ưu tiên phần tử nào sẽ ở bên trên (theo hướng nhìn của người dùng) ta sẽ sử dụng thuộc tính z-index (chúng ta sẽ nhìn thấy phần tử bên trên che khuất phần tử bên dưới trừ khi nó có background trong suốt). z-index nhận giá trị là các số (có thể nhận số âm) và số nào càng cao thì ưu tiên càng cao (ví d phần tử có z-index là 2 sẽ đè lên phần tử có z-index là 1).
 
 * CSS float: Được sử dụng để định vị và bố trí trên trang web.
@@ -94,7 +94,7 @@
 		+ Sử dụng thuộc tính overflow:auto cho phần tử cha.
 
 * CSS Clear : Cho phép xác định những phần tử nào có thể nổi bên cạnh phần tử đã được xóa và vị trí của nó.
-	
+
 	+ Nên sử dụng Clearfix hack để kiểm soát nội dung không bị tràn ra ngoài :
 
 		.clearfix::after {
@@ -106,7 +106,7 @@
 * CSS Display :
 	+ display:inline : Chuyển phần tử về hiển thị cùng 1 hàng.
 	+ display:inline-block : Chuyển phần tử về hiển thị trên cùng 1 hàng nhưng nó vẫn thừa hưởng các đặc tính của block như có thể tùy chỉnh kích thước,thêm background ....
-	+ display:block : chuyển phần tử về hiển thị kiểu block,sở hữu 1 hàng riêng. 
+	+ display:block : chuyển phần tử về hiển thị kiểu block,sở hữu 1 hàng riêng.
 
 * Transition : Thuộc tính làm cho phần tử thay đổi thuộc tính của nó 1 cách từ từ trong 1 thời gian xác định.
 
@@ -140,7 +140,7 @@
 
 	+ overflow:initial : trả về giá trị mặc định.
 
-	+ overflow:inherit : 
+	+ overflow:inherit :
 
 * Box-shadow : Gắn bóng của phần tử.
 
@@ -219,12 +219,12 @@
 	+ try...catch : Thực hiện xử lý lỗi đối với 1 khối các câu lệnh.
 	+ var : Khai báo 1 biến.
 
-* Data Type(kiểu dữ liệu) : 
+* Data Type(kiểu dữ liệu) :
 	+ Các biến JS có thể chứa nhiều loại dữ liệu : numbers(số),string(chuỗi),object(đối tượng)...
 	+ Khi thêm 1 số và 1 chuỗi,JS sẽ coi số là 1 chuỗi.
 	+ JS đánh giá các biểu thức từ trái sang phải.
 	+ JS là 1 kiểu Dynamic(động): cùng 1 biến có thể được sử dụng để chứa các kiểu dữ liệu khác nhau.
-	+ Số có thể chia làm 2 loại: 
+	+ Số có thể chia làm 2 loại:
 		- Interger(số nguyên)
 		- Float(số thập phân): dùng dấm chấm chứ k dùng dấu phẩy.
 	+ 1 phép toán số học k hợp lệ sẽ trả về dữ liệu là NaN(NOT A NUMBER),kiểu dữ liệu là number.
@@ -272,14 +272,14 @@
 				{
 				   case condition 1: statement(s)
 				   break;
-				   
+
 				   case condition 2: statement(s)
 				   break;
 				   ...
-				   
+
 				   case condition n: statement(s)
 				   break;
-				   
+
 				   default: statement(s)
 				}
 				Lệnh break chỉ dẫn phần cuối của mỗi trường hợp cụ thể. Nếu chúng bị bỏ quên, bộ thông dịch sẽ tiếp tục thực thi mỗi lệnh trong mỗi trường hợp sau.
@@ -308,7 +308,7 @@
 	- Cú pháp : for(variablename in object){
 		statement or block to execute
 	}
-	- Trong mỗi vòng lặp,1 thuộc tính object-đối tượng được gán tới variablename-tên biến và vòng lặp này tiếp tục tới khi hết tất cả thuộc tính của đối tượng.	
+	- Trong mỗi vòng lặp,1 thuộc tính object-đối tượng được gán tới variablename-tên biến và vòng lặp này tiếp tục tới khi hết tất cả thuộc tính của đối tượng.
 
 * Điều khiển vòng lặp trong JS:
 	- Lệnh Break: Được sử dụng để thoát sớm ra khỏi 1 vòng lặp mà không quan tâm đến điều kiện lặp.
@@ -326,11 +326,11 @@
 	+ Tên hàm có thể chứa ký tự,số,gạch dưới và ký tự $.
 	+ Trong ngoặc đơn có thể chứa tên tham số phân cách bởi dấu phẩy.
 	+ Mã được thực hiện bởi hàm,đặt bên trong ngoặc nhọn.
-	+ Hàm được gọi khi : 
+	+ Hàm được gọi khi :
 		- Khi sự kiện xảy ra.
 		- Được gọi từ JS.
 		- Tự động.
-	+ Return Function: 
+	+ Return Function:
 		- Khi JS đạt tới câu lệnh return,hàm sẽ ngừng thực hiện.
 		- Nếu hàm được gọi từ 1 câu lệnh,JS sẽ Return để thực thi mã sau câu lệnh được gọi.
 		- Hàm thường tính toán 1 giá trị trả về.
@@ -355,4 +355,6 @@
 	+ Hộp thoại xác nhận(Confirmation) : Nhận sự đồng ý của người dùng trên bất cứ tùy chọn nào.Nó hiển thị với 2 nút:OK và Cancel.Nếu người dùng click vào nút OK, phương thức confirm() sẽ trả về true. Nếu người dùng click nút Cancel, thì confirm() trả về false.
 
 	+ Hộp thoại gợi ý(Prompt) : pop-up một hộp văn bản để nhận input từ người dùng. Vì thế, nó cho bạn khả năng tương tác với người dùng. Người dùng cần điền thông tin vào trường đó và sau đó nhấn OK.Hộp thoại này được hiển thị bởi sử dụng một phương thức là prompt() mà nhận hai tham số: (i) Một label mà bạn muốn hiển thị trong hộp văn bản và (ii) Một chuỗi mặc định để hiển thị trong hộp văn bản.Hộp thoại này có hai nút: OK và Cancel. Nếu người dùng nhấn vào nút OK, phương thức prompt() sẽ trả về giá trị đã nhập từ hộp văn bản. Nếu người dùng nhấn nút Cancel, phương thức prompt() trả về null.
+
+* Từ khóa Void trong JS : Được sử dụng như là 1 toán tử 1 ngôi xuất hiện trước toán hạng đơn của nó.
 

@@ -544,8 +544,9 @@ ul,ol{
 
 .row_footer{
 	position: absolute;
-	top: 270px;
+	top: 370px;
 	left: 0;
+	width :100%;
 }
 .address_footer{
 	float: left;
@@ -619,7 +620,7 @@ ul,ol{
 
 .reserved_footer{
 	position: absolute;
-	top: 440px;
+	top: 540px;
 	left: 0;
 }
 .reserved_footer p{
