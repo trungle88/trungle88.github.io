@@ -4,6 +4,12 @@ $(document).ready(function(){
 			  autoControls: true,
 			  stopAutoOnClick: true,
 			  pager: true,
-			  slideWidth: 620
+			  slideWidth: 630,
+			  minSlides :1,
+			  maxSlides : 7,
+			  moveSlides: 1,
+			  slideMargin: 30,
+			  ticker: false,
+			  speed: 1000
 			});
 		});

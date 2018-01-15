@@ -127,13 +127,14 @@ ul,ol{
 	text-transform: uppercase;
 	margin: 0;
 	letter-spacing: 18px;
+	margin-bottom: 50px;
 }
 .order p{
 	color: #FFF;
 	font-size: 16px;
 	line-height: 30px;
 	text-align: justify;
-	margin: 50px 0;
+	margin: 0;
 	font-family: "segoeui";
 }
 .order_now{
@@ -143,6 +144,7 @@ ul,ol{
 	padding: 20px 40px;
 	border-radius: 5px;
 	display: inline-block;
+	margin-top: 50px;
 }
 .order_now:hover{
 	color: #FFF;
@@ -337,7 +339,7 @@ ul,ol{
 }
 .review_slide ul.bxslider li{
 	display: inline-block;
-	margin: 0 25px;
+	margin-left: 20px;
 	background: #FFF;
 }
 .review_slide ul.bxslider li .job_review{
@@ -489,12 +491,14 @@ ul,ol{
 	background-color: #090b1e;
 	margin-top: 100px;
 	padding: 100px 0 130px 0;
+	min-height: 680px;
 }
 .connect_footer{
 	text-align: center;
 	width: 50%;
 	position: absolute;
 	left: 25%;
+	top: 0;
 }
 .connect_footer .title_connect_footer{
 	color: #ffffff;
@@ -539,9 +543,9 @@ ul,ol{
 }
 
 .row_footer{
-	margin-top: 370px;
-	display: inline-block;
-	width: 100%;
+	position: absolute;
+	top: 270px;
+	left: 0;
 }
 .address_footer{
 	float: left;
@@ -614,7 +618,9 @@ ul,ol{
 }
 
 .reserved_footer{
-	margin-top: 100px;
+	position: absolute;
+	top: 440px;
+	left: 0;
 }
 .reserved_footer p{
 	color: #FFF;

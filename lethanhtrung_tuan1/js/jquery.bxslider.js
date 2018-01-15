@@ -77,8 +77,8 @@
 
     // CAROUSEL
     minSlides: 1,
-    maxSlides: 3,
-    moveSlides: 1,
+    maxSlides: 1,
+    moveSlides: 0,
     slideWidth: 0,
     shrinkItems: false,
 
