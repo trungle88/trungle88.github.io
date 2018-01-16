@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -60,24 +63,118 @@
 							</a>
 						</div>
 						<div class="content-col-post">
-							<span class="txt-list-main txt-list">photodiary</span>
-							<h4 ><a href="#" class="txt-title-main txt-title">The perfect weekend getaway</a></h4>
-							<p class="txt-content-main txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							<span class="txt-list-post txt-list">Lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">More than just a music festival </a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
 					<div class="col-post">
 						<div class="img-col-post">
 							<a href="#">
-								<img src="images/img_post.jpg">
+								<img src="images/img_2_post.jpg">
 							</a>
 						</div>
 						<div class="content-col-post">
-							<span class="txt-list-main txt-list">photodiary</span>
-							<h4 ><a href="#" class="txt-title-main txt-title">The perfect weekend getaway</a></h4>
-							<p class="txt-content-main txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+							<span class="txt-list-post txt-list">Lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">Life tastes better with coffee</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						</div>
 					</div>
+					<div class="clear"></div>
 				</div>
+				<div class="row-post">
+					<div class="col-post first">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_3_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">photodiary</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">American dream</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="col-post">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_4_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">photodiary</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">A day exploring the Alps</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="sign-up">
+				<div class="container container-pd">
+					<h4 class="txt-title-signup">Sign up for our newsletter!</h4>
+					<div class="search-email">
+						<input type="text" value="Enter a valid email address" onblur="if (this.value == '') {this.value = 'Enter a valid email address';}" onfocus="if (this.value == 'Enter a valid email address') {this.value = '';}" name="Enter a valid email address">
+					</div>
+				</div>
+			</div>
+			<div class="container container-pd">
+				<div class="row-post" id="row-post-show">
+					<div class="col-post first">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_5_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">Top 10 song for running</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="col-post">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_6_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">Cold winter days</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="row-post" id="row-post-hide">
+					<div class="col-post first">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_5_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">Top 10 song for running</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="col-post">
+						<div class="img-col-post">
+							<a href="#">
+								<img src="images/img_6_post.jpg">
+							</a>
+						</div>
+						<div class="content-col-post">
+							<span class="txt-list-post txt-list">lifestyle</span>
+							<h4 ><a href="#" class="txt-title-post txt-title">Cold winter days</a></h4>
+							<p class="txt-content-post txt-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<a href="#" id="btn-load-more" onclick="return false;" class="btn-load-more">Load more</a>
+				<a href="#" id="btn-hide-more" class="btn-hide-more" onclick="return false;">Hide more</a>
 			</div>
 		</div>
 		<!-- end main-->
