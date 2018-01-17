@@ -19,3 +19,14 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: 'seguisb';
+	src: url('seguisb.eot');
+	src: url('seguisb.eot?#iefix') format('embedded-opentype'),
+		 url('seguisb.woff') format('woff'),
+		 url('seguisb.ttf') format('truetype'),
+		 url('seguisb.svg#OpenSans') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}

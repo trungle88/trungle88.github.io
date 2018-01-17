@@ -15,3 +15,18 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+
+
+$(document).ready(function(){
+	$('.product-row-seller').bxSlider({
+		minSlides: 1,
+  		maxSlides: 1,
+  		slideMargin: 35,
+		auto: true,
+  		autoControls: true,
+  		controls : false,
+  		stopAutoOnClick: true,
+  		pager: true,
+  		slideWidth: 200,
+	});
+});
