@@ -36,3 +36,23 @@ ul,ol{
 	margin: 0 auto;
 	position: relative;
 }
+
+
+.header-top{
+	padding: 33px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+.logo{
+	float: left;
+}
+.header-top-right{
+	float: right;
+}
+.slider{
+	height: 705px;
+	background: #ccc;
+}
+

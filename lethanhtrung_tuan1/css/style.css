@@ -266,7 +266,7 @@ ul,ol{
 .wireless{
 	background-image: url(../images/bg_ipx_wireless.png) , url(../images/bg_x_wireless.png);
 	background-repeat: no-repeat , no-repeat;
-	background-position: 1128px center , left 520px;
+	background-position: right center , left 520px;
 	background-color: #090b1e;
 	position: relative;
 	z-index: 999;
@@ -295,7 +295,7 @@ ul,ol{
 .security{
 	background-image: url(../images/bg_security.png),url(../images/bg_elipse_security.png) ;
 	background-repeat: no-repeat , no-repeat;
-	background-position: 1430px 25px , 390px center;
+	background-position: right 25px , 390px center;
 	background-color: #FFF;
 	position: relative;
 	z-index: 1;
@@ -394,6 +394,7 @@ ul,ol{
 	min-height: 755px;
 	position: relative;
 	z-index: 999;
+	background-color: #0b0e1e;
 }
 .video iframe{
 	position: absolute;
