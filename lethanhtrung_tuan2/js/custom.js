@@ -18,13 +18,14 @@ jQuery(document).ready(function($){
 
 
 $(document).ready(function(){
-	$('.product-row-seller').bxSlider({
+	$('.slider-best-seller').bxSlider({
 		minSlides: 1,
   		maxSlides: 1,
   		slideMargin: 35,
+  		autoheight: false,
 		auto: true,
   		autoControls: true,
-  		controls : false,
+  		controls : true,
   		stopAutoOnClick: true,
   		pager: true,
   		slideWidth: 200,
