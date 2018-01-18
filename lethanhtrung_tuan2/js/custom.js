@@ -19,10 +19,9 @@ jQuery(document).ready(function($){
 
 $(document).ready(function(){
 	$('.slider-best-seller').bxSlider({
-		minSlides: 1,
-  		maxSlides: 1,
+		
   		slideMargin: 35,
-  		autoheight: false,
+  		adaptiveHeight: true,
 		auto: true,
   		autoControls: true,
   		controls : true,
