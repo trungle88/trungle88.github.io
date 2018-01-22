@@ -1,0 +1,28 @@
+
+@font-face {
+	font-family: 'TodaySHOP-XLightItalic';
+	src: url('TodaySHOP-XLightItalic_44896.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'TodaySHOP-Light';
+	src: url('TodaySHOP-Light_44888.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'TodaySHOP-Medium';
+	src: url('TodaySHOP-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'TodaySHOP-Bold';
+	src: url('TodaySHOP-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: bold;
+}

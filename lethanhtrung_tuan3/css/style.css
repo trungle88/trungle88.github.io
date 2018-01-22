@@ -1,0 +1,157 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#fff;
+	font-size: 14px;
+	font-family: "TodaySHOP-XLightItalic";
+	background-image: url(../images/bg_body.png);
+	background-repeat: repeat-x;
+	background-position: top center;
+}
+*{
+	box-sizing: border-box;
+}
+img
+{
+	border:0px;
+	max-width: 100%;
+
+}
+.clear{
+	clear: both;
+	float: none !important;
+}
+*:focus {
+    outline: 0;
+
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+.container{
+	max-width : 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+.container-pd{
+	padding: 0 160px;
+	margin: 0 auto;
+}
+/* start header */
+#header{
+	
+}
+.header-top{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: transparent;
+	padding: 28px 58px;
+}
+.logo{
+	float: left;
+}
+.navigation{
+	float: right;
+}
+.navigation ul{
+	
+}
+.navigation ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 40px 0 0;
+}
+.navigation ul li:nth-child(6){
+	padding-right: 0;
+}
+.navigation ul li a{
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "TodaySHOP-Bold";
+}
+.banner{
+
+}
+/* end header */
+
+/*start main*/
+#main{
+	margin: 70px 0;
+}
+.lates{
+	margin-bottom: 60px;
+}
+.lates-col{
+	float: left;
+	margin-right: 35px;
+	max-width: 22%;
+}
+.lates-col:nth-child(4){
+	margin-right: 0;
+	float: right;
+}
+.lates-col-img{
+	max-width: 100%;
+}
+.lates-col-content{
+	margin: 20px 0;
+	text-align: left;
+}
+.lates-col-content a.title-lates{
+	color: #333333;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'TodaySHOP-Light';
+	word-spacing: 7px;
+}
+.lates-col-content a.title-lates:hover{
+	color: #ffd627;
+}
+.lates-col-content p{
+	color: #666666;
+	font-size: 14px;
+	line-height: 20px;
+	word-spacing: 6px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.recent-blog{
+	margin-bottom: 70px;
+}
+.recent-blog h4.title-recent-blog{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'TodaySHOP-Medium';
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+.row-recent-blog{
+	background-color: #e7e7e7;
+	height: 1px;
+}
+.row-recent-blog::before {
+	content: '';
+	background-image: url(../images/bg_recent-blog.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 0 30px;
+}
+
+
+
+
+.row-main{
+
+}
+/*end main*/

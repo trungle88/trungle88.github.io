@@ -20,13 +20,13 @@ jQuery(document).ready(function($){
 $(document).ready(function(){
 	$('.slider-best-seller').bxSlider({
 		
-  		slideMargin: 35,
+  		slideMargin: 45,
   		adaptiveHeight: true,
 		auto: true,
   		autoControls: true,
   		controls : true,
   		stopAutoOnClick: true,
   		pager: true,
-  		slideWidth: 200,
+  		slideWidth: 250,
 	});
 });
