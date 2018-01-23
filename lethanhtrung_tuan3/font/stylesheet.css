@@ -1,7 +1,7 @@
 
 @font-face {
-	font-family: 'TodaySHOP-XLightItalic';
-	src: url('TodaySHOP-XLightItalic_44896.ttf') format('truetype');
+	font-family: 'TodaySHOP-XLight';
+	src: url('TodaySHOP-XLight.otf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }
@@ -15,14 +15,22 @@
 
 @font-face {
 	font-family: 'TodaySHOP-Medium';
-	src: url('TodaySHOP-Medium.ttf') format('truetype');
+	src: url('TodaySHOP-Medium.otf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'TodaySHOP-Bold';
-	src: url('TodaySHOP-Bold.ttf') format('truetype');
+	src: url('TodaySHOP-Bold.otf') format('truetype');
 	font-style: normal;
 	font-weight: bold;
 }
+
+@font-face {
+	font-family: 'TodaySHOP-MediumItalic';
+	src: url('TodaySHOP-MediumItalic_44891.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
