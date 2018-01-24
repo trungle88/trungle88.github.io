@@ -93,11 +93,11 @@ ul,ol{
 }
 .lates-col{
 	float: left;
-	margin-right: 36px;
+	margin-right: 37px;
 	max-width: 22%;
 }
 .lates-col:nth-child(4){
-	margin-right: 5px;
+	margin-right: 4px;
 	float: right;
 }
 .lates-col-img{
@@ -131,7 +131,6 @@ ul,ol{
 .recent-blog h4.title-recent-blog{
 	color: #000000;
 	font-size: 20px;
-	font-family: 'TodaySHOP';
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -168,44 +167,52 @@ ul,ol{
 .date-recent-blog span.date1{
 	font-size: 52px;
 	position: absolute;
-	top: 12px;
-	left: 18px;
+	top: 10px;
+	left: 15px;
+	font-style: italic;
+	font-family: 'times';
+	font-weight: bold;
 }
 .date-recent-blog span.date2{
 	font-size: 39px;
 	position: absolute;
-	top: 15px;
-	right: 14px;
+	top: 14px;
+	left: 39px;
+	font-style: italic;
+	font-family: 'times';
+	font-weight: bold;
 }
 .date-recent-blog span.month{
 	font-size: 10px;
 	position: absolute;
 	top: 9px;
-	left: 33px;
+	left: 29px;
+	font-weight: 100;
 	text-transform: uppercase;
 }
 .date-recent-blog span.year{
 	font-size: 12px;
 	position: absolute;
-	top: 47px;
-	left: 43px;
+	top: 51px;
+	left: 39px;
+	font-weight: 100;
 }
 .des-recent-blog{
 	float: left;
-	padding: 30px 0;
-	max-width: 35%;
+	padding-top: 30px;
+	max-width: 32%;
 	line-height: 20px;
 }
 .title-des-recent-blog{
 	color: #000000;
 	font-size: 16px;
 	font-weight: 300;
+	word-spacing: 5px;
 }
 .des-recent-blog p{
 	color: #666666;
 	font-size: 14px;
-	margin-top: 10px;
-	margin-bottom: 0;
+	margin: 5px 0;
 	font-weight: 100;
 }
 .readMore-recent-blog{
@@ -216,24 +223,21 @@ ul,ol{
 	color: #8d7302;
 	font-size: 14px;
 	background-color: #ffd627;
-	padding: 10px 5px 10px 10px;
+	padding: 10px;
 	position: absolute;
 	top: 43px;
 	right: 0;
 	display: block;
-	font-family: 'TodaySHOP-MediumItalic';
+	font-style: italic;
+	font-weight: 500;
 }
-
-
-
-
 
 .row-main{
 
 }
-.col21{
-	width: 21%;
-	margin-right: 50px;
+.col22{
+	width: 22%;
+	margin-right: 36px;
 }
 .about-us{
 	float: left;
@@ -250,7 +254,7 @@ ul,ol{
 .title{
 	color: #000000;
 	font-size: 16px;
-	font-family: 'TodaySHOP-Medium';
+	font-weight: 500;
 	margin-bottom: 40px;
 	margin-top: 0;
 	text-transform: uppercase;
@@ -260,7 +264,7 @@ ul,ol{
 	font-size: 14px;
 	line-height: 25px;
 	text-align: left;
-	font-family: 'TodaySHOP-XLight';
+	font-weight: 100 ;
 }
 .row-recent-blog-post{
 	margin-bottom: 23px;
@@ -292,10 +296,109 @@ ul,ol{
 	font-size: 14px;
 	display: block;
 	margin-bottom: 5px;
+	font-weight: 100;
 }
 .des-recent-blog-post span{
 	color: #999999;
 	font-size: 14px;
+	font-weight: 100;
+}
+
+.row-twitter-buzz{
+	position: relative;
+}
+.row-twitter-buzz p{
+	color: #000;
+	font-size: 14px;
+	font-weight: 100;
+	margin-bottom: 30px;
+	line-height: 25px;
+	word-spacing: 4px;
+}
+.row-twitter-buzz a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 100;	
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+	word-spacing: 4px;
+	background-color: #ffd627;
+	padding: 5px;
+}
+.row-twitter-buzz::after{
+	content: '';
+	background-color: #e7e7e7;
+	height: 1px;
+	background-image: url(../images/bg_recent-blog.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: inline-block;
+	width: 100%;
+}
+
+.pages{
+	margin-right: 0;
+}
+.pages ul{
+	
+}
+.pages ul li{
+	display: block;
+}
+.pages ul li::after{
+	content: '';
+	background-color: #e7e7e7;
+	height: 1px;
+	background-image: url(../images/bg_recent-blog.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: inline-block;
+	width: 100%;
+}
+.pages ul li a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 100;
+	padding: 20px 0 20px 5px;
+	display: inline-block;
+}
+.pages ul li:nth-child(1) a{
+	padding-top: 0;
 }
 /*end main*/
 
+/*start footer*/
+#footer{
+	
+}
+.designed-footer{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.designed-footer::before{
+	content: '';
+	background-color: #e7e7e7;
+	height: 1px;
+	background-image: url(../images/bg_recent-blog.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: inline-block;
+	width: 100%;
+}
+.designed-footer p{
+	color: #999;
+	font-size: 14px;
+	font-weight: 100;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.designed-footer p a{
+	color: #000;
+	font-size: 14px;
+	font-weight: 100;
+}
+.designed-footer p:hover a{
+	color: #ffd627;
+}
+/*end fôter*/
