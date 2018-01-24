@@ -1,36 +1,11 @@
-
-@font-face {
-	font-family: 'TodaySHOP-XLight';
-	src: url('TodaySHOP-XLight.otf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
+/* Webfont: TodaySHOP-Bold */@font-face {
+    font-family: 'TodaySHOP';
+    src: url('TodaySHOP-Bold.eot'); /* IE9 Compat Modes */
+    src: url('TodaySHOP-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TodaySHOP-Bold.woff') format('woff'), /* Modern Browsers */
+         url('TodaySHOP-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('TodaySHOP-Bold.svg#TodaySHOP') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
 }
-
-@font-face {
-	font-family: 'TodaySHOP-Light';
-	src: url('TodaySHOP-Light_44888.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'TodaySHOP-Medium';
-	src: url('TodaySHOP-Medium.otf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'TodaySHOP-Bold';
-	src: url('TodaySHOP-Bold.otf') format('truetype');
-	font-style: normal;
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'TodaySHOP-MediumItalic';
-	src: url('TodaySHOP-MediumItalic_44891.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-

@@ -4,7 +4,7 @@ body
 	padding:0px;
 	background-color:#fff;
 	font-size: 14px;
-	font-family: "TodaySHOP-XLight";
+	font-family: 'TodaySHOP';
 	background-image: url(../images/bg_body.png);
 	background-repeat: repeat-x;
 	background-position: top center;
@@ -54,7 +54,7 @@ ul,ol{
 	top: 0;
 	right: 0;
 	background: transparent;
-	padding: 28px 58px;
+	padding: 27px 57px;
 }
 .logo{
 	float: left;
@@ -68,7 +68,7 @@ ul,ol{
 .navigation ul li{
 	display: inline-block;
 	vertical-align: top;
-	padding: 20px 40px 0 0;
+	padding: 22px 45px 0 0;
 }
 .navigation ul li:nth-child(6){
 	padding-right: 0;
@@ -77,8 +77,8 @@ ul,ol{
 	color: #ffffff;
 	font-size: 14px;
 	text-transform: uppercase;
-	font-weight: bold;
-	font-family: "TodaySHOP-Bold";
+	font-weight: 700;
+	
 }
 .banner{
 
@@ -153,7 +153,42 @@ ul,ol{
 .date-recent-blog{
 	float: left;
 	margin-right: 35px;
-	padding: 20px 0 25px 0;
+	margin-top: 20px;
+	width: 72px;
+	height: 72px;
+	background-color: #ffd627;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+.date-recent-blog span{
+	display: block;
+	color: #000;
+}
+.date-recent-blog span.date1{
+	font-size: 52px;
+	position: absolute;
+	top: 12px;
+	left: 18px;
+}
+.date-recent-blog span.date2{
+	font-size: 39px;
+	position: absolute;
+	top: 15px;
+	right: 14px;
+}
+.date-recent-blog span.month{
+	font-size: 10px;
+	position: absolute;
+	top: 9px;
+	left: 33px;
+	text-transform: uppercase;
+}
+.date-recent-blog span.year{
+	font-size: 12px;
+	position: absolute;
+	top: 47px;
+	left: 43px;
 }
 .des-recent-blog{
 	float: left;
@@ -262,3 +297,4 @@ ul,ol{
 	font-size: 14px;
 }
 /*end main*/
+
