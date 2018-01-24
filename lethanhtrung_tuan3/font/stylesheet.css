@@ -9,3 +9,51 @@
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
+
+/* Webfont: TodaySHOP-Light */@font-face {
+    font-family: 'TodaySHOP';
+    src: url('TodaySHOP-Light.eot'); /* IE9 Compat Modes */
+    src: url('TodaySHOP-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TodaySHOP-Light.woff') format('woff'), /* Modern Browsers */
+         url('TodaySHOP-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('TodaySHOP-Light.svg#TodaySHOP') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: TodaySHOP-XLight */@font-face {
+    font-family: 'TodaySHOP';
+    src: url('TodaySHOP-XLight.eot'); /* IE9 Compat Modes */
+    src: url('TodaySHOP-XLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TodaySHOP-XLight.woff') format('woff'), /* Modern Browsers */
+         url('TodaySHOP-XLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('TodaySHOP-XLight.svg#TodaySHOP') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: TodaySHOP-Medium */@font-face {
+    font-family: 'TodaySHOP';
+    src: url('TodaySHOP-Medium.eot'); /* IE9 Compat Modes */
+    src: url('TodaySHOP-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TodaySHOP-Medium.woff') format('woff'), /* Modern Browsers */
+         url('TodaySHOP-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('TodaySHOP-Medium.svg#TodaySHOP') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: TodaySHOP-MediumItalic */@font-face {
+    font-family: 'TodaySHOP';
+    src: url('TodaySHOP-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('TodaySHOP-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('TodaySHOP-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('TodaySHOP-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('TodaySHOP-MediumItalic.svg#TodaySHOP') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
