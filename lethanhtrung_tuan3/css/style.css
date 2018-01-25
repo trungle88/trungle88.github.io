@@ -8,6 +8,7 @@ body
 	background-image: url(../images/bg_body.png);
 	background-repeat: repeat-x;
 	background-position: top center;
+	
 }
 *{
 	box-sizing: border-box;
@@ -16,6 +17,7 @@ img
 {
 	border:0px;
 	max-width: 100%;
+	height: auto;
 
 }
 .clear{
