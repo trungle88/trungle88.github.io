@@ -394,6 +394,7 @@ ul,ol{
 	font-weight: 100;
 	margin-top: 20px;
 	margin-bottom: 0;
+	word-spacing: 2px;
 }
 .designed-footer p a{
 	color: #000;
