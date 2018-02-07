@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0px;
+    max-width: 100%;
+}
+
+.clear {
+    clear: both;
+    float: none !important;
+}
+
+*:focus {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+#wrapper{
+	position: relative;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+/* start top bar*/
+#top-bar{
+	background-color: rgba(48, 39, 28, 1);
+	width: 100%;
+    color: #d6d6d6;
+    position: relative;
+    font-weight: 400;
+    height: 45px;
+    z-index: 111;
+    vertical-align: middle;
+}
+.position-left{
+	float: left;
+	z-index: 2;
+	height: 100%;
+	position: relative;
+}
+.position-center{
+	height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+}
+.position-right{
+	position: relative;
+    float: right;
+    z-index: 2;
+    height: 100%;
+    text-align: right;
+}
+.position-left:before,.position-center:before,.position-right:before{
+	content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-right: -3px;
+}
+.position-inner{
+	vertical-align: middle;
+	display: inline-block;
+}
+.top-bar-widget{
+	vertical-align: middle;
+    margin-right: 22px;
+    padding-right: 22px;
+    position: relative;
+    line-height: 40px;
+    font-size: 12px;
+    display: inline-block;
+}
+.top-bar-widget:after{
+	position: absolute;
+    border-right: 1px solid #888;
+    height: 15px;
+    content: '';
+    width: 1px;
+    right: 0;
+    top: 30%;
+}
+#top-bar a{
+	color: #d6d6d6;
+}
+#top-bar a:hover{
+	color: #FFF;
+}
+.social-icon-widget{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 11px;
+	margin: 0 15px 0 0;
+	color: rgb(255,255,255);
+}
+.position-inner ul{
+	
+}
+.position-inner ul li{
+	display: inline-block;
+	padding: 0 17px;
+	border-left: 1px solid #888;
+	line-height: 15px;
+}
+.position-inner ul li:first-child{
+	border-left: none;
+}
+.position-inner ul li a{
+	font-size: 12px;
+}
+/* end top bar */
+
+/* header */
+#header{
+
+}
+.menu-area{
+	position: relative;
+	height: 70px;
+	background-color: #FFF;
+}
+.menu-area a{
+	height: 29px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.menu-area a img{
+	height: 100%;
+	display: block;
+}
+
+
+
+
+
+
+/* end header */
