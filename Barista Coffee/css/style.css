@@ -22,6 +22,10 @@ img {
     clear: both;
     float: none !important;
 }
+.clear:before,.clear:after{
+    content: " ";
+    display: table;
+}
 
 *:focus {
     outline: 0;
@@ -162,8 +166,65 @@ ul,ol {
 	height: 100%;
 	display: block;
 }
-
-
+.main-menu{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.main-menu ul{
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 100%;
+}
+.main-menu ul li{
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	border-style: solid;
+    border-width: 0;
+    border-color: transparent;
+}
+.main-menu ul li a{
+	height: 100%;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #30271c;
+    font-family: Oswald,sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.main-menu ul li.active a,.main-menu ul li:hover a{
+	color: #c7a17a;
+}
+.main-menu ul li > ul{
+	left: 0;
+	top: calc(100% + 1px);
+	position: absolute;
+	border-top: 2px solid #c7a17a;
+	display: none;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 10;
+	transition: top 15s ease-out;
+}
+.main-menu ul li:hover{
+	display: block;
+}
+.main-menu ul li > ul li{
+	position: relative;
+	display: block;
+	padding: 0;
+	z-index: 997;
+}
 
 
 
