@@ -51,6 +51,7 @@ ul,ol {
 	position: relative;
 	z-index: 1000;
 	overflow: hidden;
+	width: 100%;
 }
 
 /* start top bar*/
@@ -92,7 +93,7 @@ ul,ol {
     height: 100%;
     margin-right: -3px;
 }
-.position-inner{
+.position-left-inner,.position-right-inner{
 	vertical-align: middle;
 	display: inline-block;
 }
@@ -128,40 +129,54 @@ ul,ol {
 	margin: 0 15px 0 0;
 	color: rgb(255,255,255);
 }
-.position-inner ul{
+.position-right-inner ul{
 	
 }
-.position-inner ul li{
+ul.menu-top-bar li{
 	display: inline-block;
 	padding: 0 17px;
 	border-left: 1px solid #888;
 	line-height: 15px;
 }
-.position-inner ul li:first-child{
+ul.menu-top-bar li:first-child{
 	border-left: none;
 }
-.position-inner ul li a{
+ul.menu-top-bar li a{
 	font-size: 12px;
 }
 /* end top bar */
 
 /* header */
 #header{
-
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 110;
 }
 .menu-area{
-	position: relative;
 	height: 70px;
-	background-color: #FFF;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    transition: background-color .3s ease;
 }
-.menu-area a{
-	height: 29px;
-	position: relative;
+.logo-wrapper{
 	display: inline-block;
 	vertical-align: middle;
-	max-width: 100%;
 }
-
+.menu-area .logo-wrapper a{
+	max-height: 63px;
+}
+.logo-wrapper a{
+	height: 29px;
+	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
 .menu-area a img{
 	height: 100%;
 	display: block;
@@ -187,12 +202,8 @@ ul,ol {
     border-color: transparent;
 }
 .main-menu ul li a{
-	height: 100%;
-    position: relative;
-    padding: 0;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: transparent;
+	display: inline-block;
+    padding: 0 17px;
     font-size: 15px;
     line-height: 22px;
     font-weight: 700;
@@ -200,31 +211,12 @@ ul,ol {
     font-family: Oswald,sans-serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+
 }
 .main-menu ul li.active a,.main-menu ul li:hover a{
 	color: #c7a17a;
 }
-.main-menu ul li > ul{
-	left: 0;
-	top: calc(100% + 1px);
-	position: absolute;
-	border-top: 2px solid #c7a17a;
-	display: none;
-	visibility: hidden;
-	overflow: hidden;
-	opacity: 0;
-	z-index: 10;
-	transition: top 15s ease-out;
-}
-.main-menu ul li:hover{
-	display: block;
-}
-.main-menu ul li > ul li{
-	position: relative;
-	display: block;
-	padding: 0;
-	z-index: 997;
-}
+
 
 
 
