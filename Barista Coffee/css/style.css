@@ -49,7 +49,7 @@ ul,ol {
 }
 #wrapper{
 	position: relative;
-	z-index: 1000;
+	z-index: 999;
 	overflow: hidden;
 	width: 100%;
 }
@@ -187,28 +187,22 @@ ul.menu-top-bar li a{
 	height: 100%;
 	vertical-align: middle;
 }
-.main-menu ul{
-	display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    height: 100%;
+.main-menu>ul{
+	
+    text-align: left;
 }
-.main-menu ul li{
+.main-menu>ul>li{
 	display: inline-block;
-	height: 100%;
 	position: relative;
-	border-style: solid;
-    border-width: 0;
-    border-color: transparent;
 }
-.main-menu ul li a{
-	display: inline-block;
+.main-menu>ul>li>a{
+	display: block;
     padding: 0 17px;
     font-size: 15px;
     line-height: 22px;
     font-weight: 700;
     color: #30271c;
-    font-family: Oswald,sans-serif;
+    font-family: 'Oswald',sans-serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 
@@ -216,9 +210,128 @@ ul.menu-top-bar li a{
 .main-menu ul li.active a,.main-menu ul li:hover a{
 	color: #c7a17a;
 }
+.main-menu ul li ul.sub-menu-barista{
+	display: none;
+	position: absolute;
+	top: calc(100% + 1px);
+	background-color: #FFF;
+	left: 0;
+	z-index: 999;
+	border: 2px solid #c7a17a;
+}
+.main-menu ul li ul.sub-menu-barista li{
+	width: 227px;
+	padding: 0;
+	display: block;
+}
+.main-menu ul li ul.sub-menu-barista li a{
+	display: block;
+    color: #666;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: 400;
+    padding: 0 17px;
+    float: none;
+}
+.main-menu .sub-menu-barista li:hover a{
+	color: #c7a17a;
+}
+.main-menu ul li:hover .sub-menu-barista{
+	display: block;
+}
 
 
 
 
-
+.shopping-cart-outer{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	border-left: 2px solid rgba(0,0,0,.5);
+	padding-left: 17px;
+	margin-left: 17px;
+}
+.shopping-cart-outer .shopping-cart-inner{
+	display: table;
+	vertical-align: middle;
+	height: 100%;
+}
+.shopping-cart-outer .shopping-cart-inner .shopping-cart-header{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	padding-left: 2px;
+	padding-right: 11px;
+}
+.shopping-cart-outer .shopping-cart-header .header-cart{
+	display: inline-block;
+	position: relative;
+	padding: 0 10px 0 7px;
+}
+.shopping-cart-outer .shopping-cart-header .header-cart i{
+	color: #30271c;
+	font-size: 18px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.shopping-cart-outer .cart-amount{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 9px;
+	color: #FFF;
+	background-color: #c7a17a;
+	display: inline-block;
+	vertical-align: middle;
+	height: 16px;
+	width: 16px;
+	line-height: 16px;
+	text-align: center;
+	font-family: 'Open Sans',serif;
+	font-weight: 700;
+}
+.search-barista{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	position: relative;
+}
+.search-barista i{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	cursor: pointer;
+}
+.search-barista input[type="text"]{
+	border: 1px solid rgba(48, 39, 28, 1)
+    color: #d6d6d6;
+    display: inline-block;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 2%;
+    padding-right: 1%;
+    vertical-align: top;
+    width: 200px;
+}
 /* end header */
+
+
+
+/* start main */
+#main{
+	position: relative;
+	z-index: 100;
+	background-color: #FFF;
+}
+.main-inner{
+
+}
+.slider{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	z-index: 10;
+}
+/* end main */

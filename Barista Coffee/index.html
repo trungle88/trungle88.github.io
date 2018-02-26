@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Index Barista Coffee</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -77,9 +79,15 @@
 										<a href="index.html">Home</a>
 									</li>
 									<li>
-										<a href="#">
-											Menu
-										</a>
+										<a href="#">Menu</a>
+										<ul class="sub-menu-barista">
+											<li>
+												<a href="#">Our Menu</a>
+											</li>
+											<li>
+												<a href="#">Simple Menu</a>
+											</li>
+										</ul>
 									</li>
 									<li>
 										<a href="#">Pages</a>
@@ -98,6 +106,20 @@
 									</li>
 								</ul>
 							</div>
+							<div class="shopping-cart-outer">
+								<div class="shopping-cart-inner">
+									<div class="shopping-cart-header">
+										<a href="#" class="header-cart">
+											<i class="fa fa-shopping-cart"></i>
+											<span class="cart-amount">0</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="search-barista">
+								<input type="text" value="Search for a product..." onblur="if (this.value == '') {this.value = 'Search for a product...';}" onfocus="if (this.value == 'Search for a product...') {this.value = '';}" name="Search for a product...">
+								<i class="fa fa-search"></i>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -105,7 +127,16 @@
 		</div>
 		<!-- end header -->
 		<!-- start main -->
-		<div id="main"></div>
+		<div id="main">
+			<div class="main-inner">
+				<div class="slider">
+					<div class="slider-inner">
+						
+					</div>
+				</div>
+				<div class="full-wildth"></div>
+			</div>
+		</div>
 		<!-- end main -->
 		<!-- start footer -->
 		<div id="footer"></div>
