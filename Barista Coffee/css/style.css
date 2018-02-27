@@ -159,9 +159,6 @@ ul.menu-top-bar li a{
 	height: 70px;
     position: relative;
     border-bottom: 1px solid transparent;
-    -webkit-transition: background-color .3s ease;
-    -moz-transition: background-color .3s ease;
-    transition: background-color .3s ease;
 }
 .logo-wrapper{
 	display: inline-block;
@@ -188,12 +185,16 @@ ul.menu-top-bar li a{
 	vertical-align: middle;
 }
 .main-menu>ul{
-	
     text-align: left;
 }
 .main-menu>ul>li{
 	display: inline-block;
 	position: relative;
+}
+.main-menu>ul>li:nth-child(7){
+	border-right: 2px solid rgba(0,0,0,.5);
+	padding-right: 17px;
+	margin-right: 17px;
 }
 .main-menu>ul>li>a{
 	display: block;
@@ -216,28 +217,37 @@ ul.menu-top-bar li a{
 	top: calc(100% + 1px);
 	background-color: #FFF;
 	left: 0;
+	right: auto;
 	z-index: 999;
-	border: 2px solid #c7a17a;
+	border-top: 2px solid #c7a17a;
+	
 }
 .main-menu ul li ul.sub-menu-barista li{
 	width: 227px;
 	padding: 0;
 	display: block;
+	padding: 5px 0;
 }
 .main-menu ul li ul.sub-menu-barista li a{
 	display: block;
     color: #666;
     font-size: 13px;
-    line-height: 35px;
+    line-height: 30px;
     font-weight: 400;
     padding: 0 17px;
     float: none;
+    text-transform: uppercase;
 }
 .main-menu .sub-menu-barista li:hover a{
 	color: #c7a17a;
 }
 .main-menu ul li:hover .sub-menu-barista{
 	display: block;
+}
+.main-menu .right{
+	right: 0 !important;
+	left: auto !important;
+	text-align: right;
 }
 
 
@@ -247,9 +257,7 @@ ul.menu-top-bar li a{
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-	border-left: 2px solid rgba(0,0,0,.5);
-	padding-left: 17px;
-	margin-left: 17px;
+	
 }
 .shopping-cart-outer .shopping-cart-inner{
 	display: table;
@@ -304,8 +312,8 @@ ul.menu-top-bar li a{
 	cursor: pointer;
 }
 .search-barista input[type="text"]{
-	border: 1px solid rgba(48, 39, 28, 1)
-    color: #d6d6d6;
+	border: 1px solid rgba(48, 39, 28, 1);
+    color: #30271c;
     display: inline-block;
     font-size: 12px;
     height: 28px;
@@ -333,5 +341,14 @@ ul.menu-top-bar li a{
 	width: 100%;
 	overflow: hidden;
 	z-index: 10;
+}
+.bx-wrapper{
+	border: none;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+.bx-wrapper .bx-pager{
+	bottom: 30px;
+	left: 50%;
 }
 /* end main */
