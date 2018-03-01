@@ -403,27 +403,30 @@ ul.menu-top-bar li a{
 	position: relative;
 	z-index: 20;
 }
-.our-menu-barista{
+.banner-link{
 	margin-left: -15px;
 	margin-right: -15px;
 }
-.our-menu-barista-column{
+.banner-link-column{
 	float: left;
 	width: 50%;
 	padding-right: 0;
 	padding-left: 0;
 	opacity: 1;
 }
-.our-menu-barista-column:hover{
+.banner-link-column:hover{
 	opacity: 0.8;
 }
-.our-menu-barista-column-inner{
+.banner-link-column:hover .brt-banner .brt-banner-text .brt-banner-text-table .brt-banner-text-cell .brt-banner-read-more i{
+	margin-left: 5px;
+}
+.banner-link-column-inner{
 	box-sizing: border-box;
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
 }
-.our-menu-barista-column-inner:before,.our-menu-barista-column-inner:after{
+.banner-link-column-inner:before,.banner-link-column-inner:after{
 	content: " ";
 	display: table;
 }
@@ -483,6 +486,7 @@ ul.menu-top-bar li a{
     letter-spacing: 1px;
     font-family: 'Oswald',sans-serif;
     font-weight: 700;
+    margin: 0;
 }
 .brt-banner .brt-banner-text .brt-banner-text-table .brt-banner-text-cell .brt-banner-read-more{
 	font-size: 12px;
@@ -494,6 +498,13 @@ ul.menu-top-bar li a{
     bottom: 47px;
     color: #FFF;
 }
+.brt-banner .brt-banner-text .brt-banner-text-table .brt-banner-text-cell .brt-banner-read-more i{
+	display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 15px;
+    top: -1px;
+}
 .merchandise-coffee{
 	margin-top: 100px;
 }
@@ -503,7 +514,7 @@ ul.menu-top-bar li a{
 .merchandise-coffee-title-inner{
 	text-align: center;
 }
-.merchandise-coffee-title-inner h2{
+h2.brt-section-title{
 	font-size: 35px;
     line-height: 1.14286em;
     font-family: Oswald,sans-serif;
@@ -537,14 +548,13 @@ ul.menu-top-bar li a{
 	
 }
 .merchandise-coffee-product-inner ul.brt-product{
-	margin-bottom: 30px;
+	
 }
 .merchandise-coffee-product-inner ul.brt-product li{
 	float: left;
 	width: calc(25% - 22.5px);
 	margin-right: 30px;
 	margin-bottom: 50px;
-	text-align: center;
 }
 .merchandise-coffee-product-inner ul.brt-product li:nth-child(4n){
 	margin-right: 0;
@@ -613,8 +623,59 @@ p.gift-off-barista-subtitle{
     margin: 0;
     text-transform: uppercase;
 }
+a.read-more{
+	border: 2px solid #efefef;
+	color: rgb(239, 239, 239);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(239, 239, 239);
+    display: inline-block;
+    position: relative;
+    outline: 0;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    padding: 14px 35px;
+    font-size: 13px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+a.read-more:hover{
+	color: rgb(48,39,28);
+	background-color: rgb(255,255,255);
+	border-color: rgb(255,255,255);
+}
 
-
-
-
+.merchandise-sale-title{
+	padding-top: 50px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+span.product-badge{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	padding: 0 17px;
+	color: #fff;
+	background-color: #c7a17a;
+	font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.price del{
+	color: #cfcfcf;
+}
+.price .amount{
+	font-size: 18px;
+    font-family: Merriweather,serif;
+    font-weight: 400;
+    margin-right: 7px;
+}
+.offer-barista{
+	margin-bottom: 50px;
+}
 /* end main */
