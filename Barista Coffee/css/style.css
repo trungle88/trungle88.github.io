@@ -10,7 +10,8 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 img {
@@ -564,7 +565,37 @@ h2.brt-section-title{
 	position: relative;
 	overflow: hidden;
 }
-
+.merchandise-coffee-product-inner ul.brt-product li .product-list-image img{
+	-webkit-transition: opacity 0.35s;
+  	transition: opacity 0.35s;
+}
+.merchandise-coffee-product-inner ul.brt-product li .product-list-image .add-to-cart{
+	position: absolute;
+	bottom: 9px;
+  	left: 0;
+  	right: 0;
+  	opacity: 0;
+  	-webkit-transform: translateY(100%);
+  	transform: translateY(100%);
+  	-webkit-transition: all 0.6s ease;
+  	transition: all 0.6s ease;
+  	font-size: 0.8em;
+  	color: #FFF;
+  	line-height: 46px;
+  	letter-spacing: 1.5px;
+  	background-color: #c7a17a;
+  	font-weight: 700;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	text-align: center;	
+}
+.merchandise-coffee-product-inner ul.brt-product li:hover .add-to-cart{
+	-webkit-transform: translateY(0);
+  	transform: translateY(0);
+  	-webkit-transition: all 0.6s ease;
+  	transition: all 0.6s ease;
+  	opacity: 1;
+}
 .merchandise-coffee-product-inner ul.brt-product li .product-list-title{
 	margin: 10px 0;
 	font-size: 19px;
