@@ -7,6 +7,7 @@ body {
     color: #666;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -927,7 +928,7 @@ span.wh-hours .wh-closed{
 
 /* start about me */
 .title{
-	background-image: url(../images/Team-title-area-parallax.jpg); 
+	
 	background-repeat: no-repeat;
 	background-position: center 0px;
 	background-attachment: fixed;
@@ -936,8 +937,16 @@ span.wh-hours .wh-closed{
 	z-index: 101;
 	display: block;
 	width: 100%;
-	height: 410px;
 	background-color: #f5f5f5;
+}
+.about-me-img{
+	background-image: url(../images/Team-title-area-parallax.jpg);
+	height: 410px;
+}
+.offer-img{
+	background-image: url(../images/What-we-offer-title-img.jpg);
+	height: 680px;
+	
 }
 .title-image{
 	display: none;
@@ -1014,6 +1023,112 @@ span.wh-hours .wh-closed{
 	background-repeat: no-repeat;
 	position: relative;
 }
+.element-holder .element-holder-item .element-holder-item-inner{
+	width: 100%;
+}
+.single-image-wrapper{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+}
+.single-image-wrapper img{
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.element-holder-item-content{
+	padding: 0% 4% 0% 8%;
+}
+.element-holder-item-content h2{
+	font-size: 35px;
+	line-height: 1.14286em;
+	font-family: Oswald,sans-serif;
+    color: #30271c;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.element-holder-item-content p{
+	color: #666;
+	margin-top: 0;
+}
+.mgb_1{
+	margin-bottom: 25px;
+}
+.mgb_2{
+	margin-bottom: 40px;
+}
+blockquote{
+	quotes: none;
+    position: relative;
+    display: table;
+    padding: 9px 0 9px 33px;
+    border-left: 3px solid #c7a17a;
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+blockquote .blockquote-text{
+	display: table-cell;
+    font-style: italic;
+    font-family: Merriweather,serif;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 33px;
+    color: #30271c;
+}
+.icon-short-code{
+	display: inline-block;
+}
+.icon-short-code i{
+	color: #757575;
+    font-size: 17px;
+}
+.icon-short-code i:hover{
+	color: #c7a17a;
+}
 /* end about me */
+/* start what we offer */
+ul.utilities{
+	
+}
+ul.utilities li{
+	float: left;
+	padding: 0 60px;
+	width: 33.33333%;
+	margin-bottom: 75px;
+}
+.utilities-col{
+	text-align: left;
+}
+.utilities-col-icon{
+	float: left;
+}
+.icon-medium{
+	
+	margin: -11px 0px 0px 0px;
+}
+.icon-medium i{
+	font-size: 3em;
+	color: rgb(199, 161, 122);
+}
+.icon-medium i:hover{
+	color: rgb(48, 39, 28);
+}
+.utilities-col-content{
+	padding-left: 60px;
+}
+.title-col-utilities{
+	margin-bottom: 17px;
+	font-size: 19px;
+    line-height: 1.31579em;
+    font-family: Oswald,sans-serif;
+    color: #30271c;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+/* end what we offer */
 
 
