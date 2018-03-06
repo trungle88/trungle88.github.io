@@ -714,6 +714,9 @@ span.product-badge{
 	float: left;
 	width: 20%;
 }
+.owl-carousel .item:hover{
+	margin-top: -10px;
+}
 
 /* end main */
 
@@ -994,6 +997,8 @@ span.wh-hours .wh-closed{
 }
 .title-holder .title-subtitle .title-subtitle-inner h1 span{
 	display: inline-block;
+	letter-spacing: 2px;
+	word-spacing: 2px;
 }
 .barista-row{
 	padding-top: 120px;
@@ -1090,6 +1095,10 @@ blockquote .blockquote-text{
 }
 /* end about me */
 /* start what we offer */
+.barista-row-custom{
+	padding-top: 116px;
+	padding-bottom: 82px;
+}
 ul.utilities{
 	
 }
@@ -1097,7 +1106,10 @@ ul.utilities li{
 	float: left;
 	padding: 0 60px;
 	width: 33.33333%;
-	margin-bottom: 75px;
+	margin-bottom: 70px;
+}
+ul.utilities li:nth-child(n+7){
+	margin-bottom: 30px;
 }
 .utilities-col{
 	text-align: left;
@@ -1129,6 +1141,111 @@ ul.utilities li{
     text-transform: uppercase;
     margin-top: 0;
 }
+.barista-offering{
+	padding-top: 0;
+}
+.elements-holder{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+.elements-holder-item{
+	width: 33.333%;
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+}
+.elements-holder-item .elements-holder-item-link{
+	display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0;
+}
+.elements-holder-item .elements-holder-item-inner{
+	width: 100%;
+}
+.bg-item-1{
+	background-image: url(../images/Offerings-holder-img-1.jpg);
+}
+.bg-item-2{
+	background-color: #eae7de;
+}
+.bg-item-3{
+	background-image: url(../images/Offerings-holder-img-2.jpg);
+}
+.bg-item-4{
+	background-image: url(../images/Offerings-holder-img-3.jpg);
+}
+.bg-item-5{
+	background-image: url(../images/Offerings-holder-img-4.jpg);
+}
+.bg-item-6{
+	background-image: url(../images/Offerings-holder-img-5.jpg);
+}
+
+.pd-item-1{
+	padding: 19% 45px 17% 60px;
+}
+.pd-item-2{
+	padding: 19% 40px 17% 60px;
+}
+.pd-item-3{
+	padding: 43% 40px 41.85% 60px;
+}
+.color-offering-1{
+	color: #FFF;
+}
+.elements-holder-item .color-offering-2{
+	color: #30271c;
+}
+.title-offering{
+	font-size: 35px;
+	line-height: 1.14286em;
+	font-family: Oswald,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    margin-top: 0;
+}
+.elements-holder-item-content p{
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+.elements-holder-item-content .btn-offering{
+	font-size: 12px;
+	display: inline-block;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 14px 0;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+.elements-holder-item-content .btn-offering:hover i{
+	margin-left: 5px;
+}
+.barista-carousel{
+	padding-top: 0;
+	background-color: #f5f5f5;
+	margin-top: 120px;
+}
 /* end what we offer */
+/* start contact us */
+.contact-us-img{
+	background-image: url(../images/Contact-title-area-img-1.jpg);
+	height: 410px;
+	
+}
+/* end contact us */
+
 
 
