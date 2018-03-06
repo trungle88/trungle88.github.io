@@ -18,6 +18,7 @@ body {
 img {
     border: 0px;
     max-width: 100%;
+    height: auto;
 }
 
 .clear {
@@ -39,7 +40,21 @@ a {
     padding: 0;
     vertical-align: baseline;
 }
-
+h1,h2,h3,h4,h5,h6{
+	font-family: Oswald,sans-serif;
+    color: #30271c;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h2{
+	font-size: 35px;
+    line-height: 1.14286em;
+}
+h3 {
+    font-size: 22px;
+    letter-spacing: .5px;
+    line-height: 1.22727em;
+}
 ul,ol {
     margin: 0;
     padding: 0;
@@ -435,7 +450,6 @@ ul.menu-top-bar li a{
     height: 100%;
     z-index: 1;
 }
-
 .brt-banner .brt-banner-image{
 	-webkit-transition: all .25s ease-out;
     -moz-transition: all .25s ease-out;
@@ -507,15 +521,6 @@ ul.menu-top-bar li a{
 }
 .merchandise-coffee-title-inner{
 	text-align: center;
-}
-h2.brt-section-title{
-	font-size: 35px;
-    line-height: 1.14286em;
-    font-family: Oswald,sans-serif;
-    color: #30271c;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 20px 0;
 }
 .brt-section-subtitle{
 	font-family: Merriweather,serif;
@@ -1046,12 +1051,6 @@ span.wh-hours .wh-closed{
 	padding: 0% 4% 0% 8%;
 }
 .element-holder-item-content h2{
-	font-size: 35px;
-	line-height: 1.14286em;
-	font-family: Oswald,sans-serif;
-    color: #30271c;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 40px;
     margin-top: 0;
 }
@@ -1118,7 +1117,6 @@ ul.utilities li:nth-child(n+7){
 	float: left;
 }
 .icon-medium{
-	
 	margin: -11px 0px 0px 0px;
 }
 .icon-medium i{
@@ -1207,11 +1205,6 @@ ul.utilities li:nth-child(n+7){
 	color: #30271c;
 }
 .title-offering{
-	font-size: 35px;
-	line-height: 1.14286em;
-	font-family: Oswald,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 45px;
     margin-top: 0;
 }
@@ -1243,9 +1236,145 @@ ul.utilities li:nth-child(n+7){
 .contact-us-img{
 	background-image: url(../images/Contact-title-area-img-1.jpg);
 	height: 410px;
-	
+}
+.width-50{
+	width: 50%;
+}
+.title-contact{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.separator-left{
+	border-bottom-width: 3px;
+}
+ul.content-contact{
+	margin-top: 40px;	
+}
+ul.content-contact li{
+	float: left;
+	width: 50%;
+	margin-bottom: 40px;
+}
+ul.content-contact li:nth-child(n+5){
+	margin-bottom: 0;
+}
+.contact-col{
+	text-align: left;
+}
+.contact-col-icon{
+	float: left;
+}
+.icon-normal{
+	margin: -5px 0 0 0;
+}
+.icon-normal i{
+	font-size: 30px;
+	color: rgb(199, 161, 122);
+}
+.contact-col-content{
+	padding-left: 45px;
+}
+.contact-col-content h4{
+	font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 /* end contact us */
+/* start out menu */
+.barista-row-menu{
+	padding-top: 120px;
+	padding-bottom: 70px;
+	background-color: #f2f0ea ;
+}
+.column-inner-padding{
+	padding-left: 25px;
+	padding-right: 25px;
+	float: left;
+}
+.title-menu{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.menu-list{
+	margin-top: 55px;
+}
+.menu-list ul.cml-holder{
+	margin: 15px 0;
+}
+.menu-list ul li{
+	margin-bottom: 25px;
+}
+.menu-list.cml-featured-image .cml-item-image{
+	float: left;
+	position: relative;
+	width: 83px;
+}
+.menu-list.cml-featured-image .cml-item-image a{
+	display: block;
+	margin: 0;
+}
+.menu-list.cml-featured-image .cml-item-image img{
+	vertical-align: middle;
+}
+.menu-list.cml-featured-image .cml-item-content{
+	padding-left: 110px;
+}
+.menu-list .cml-bottom-holder{
+	position: relative;
+    top: 5px;
+}
+.menu-list .cml-title-holder{
+	display: table-cell;
+    width: 1%;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+.menu-list .cml-line{
+	height: 3px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    display: table-cell;
+    width: 98%;
+    z-index: 1;
+    position: relative;
+    bottom: 2px;
+}
+.menu-list .cml-price-holder{
+	display: table-cell;
+    width: 1%;
+    padding-left: 7px;
+    white-space: nowrap;
+}
+.menu-list .cml-description-holder{
+	color: #c7a17a;
+    float: left;
+    width: 70%;
+    line-height: 1.2em;
+}
+.menu-list .cml-label-holder{
+	float: right;
+    position: relative;
+    width: 30%;
+    text-align: right;
+}
+.menu-list .cml-label-holder .cml-label{
+	background-color: #c7a17a;
+    color: #30271c;
+    font-family: Merriweather,serif;
+    font-style: italic;
+    padding: 3px 13px;
+    text-align: center;
+}
+.cml-title,.cml-price{
+	margin: 0;
+}
+.barista-row-paralax{
+	background-image: url(../images/out-menu-paralax.jpg);
+	background-position: 50% 48px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	
+}
+/* end out menu */
 
 
 
