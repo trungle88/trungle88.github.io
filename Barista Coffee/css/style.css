@@ -1240,7 +1240,7 @@ ul.utilities li:nth-child(n+7){
 .width-50{
 	width: 50%;
 }
-.title-contact{
+.title-medium{
     margin-bottom: 20px;
     margin-top: 0;
 }
@@ -1372,9 +1372,120 @@ ul.content-contact li:nth-child(n+5){
 	background-position: 50% 48px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	
+	position: static;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.align-center{
+	text-align: center;
+}
+.figure{
+	display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    max-width: 100%;
 }
 /* end out menu */
+/* start simple menu */
+.column-inner-padding-simple{
+	padding-left: 85px;
+    padding-right: 85px;
+    float: left;
+}
+/* end simple menu */
+/* start reservation */
+.heading-title{
+	padding: 0 51% 0 6%;
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.form-reservation{
+	padding: 4% 8% 0 6%;
+	width: 66.66666667%;
+	float: left;
+}
+.two-column{
+	width: 100%;
+}
+.two-column>.two-column-inner{
+	margin: 0 -15px;
+}
+.two-column .column-reservation{
+	float: left;
+	width: 50%;
+}
+.two-column .column-reservation .column-reservation-inner{
+	padding: 0 15px;
+}
+.two-column .column-reservation .column-reservation-inner input[type="text"],
+.two-column .column-reservation .column-reservation-inner input[type="date"],
+.two-column .column-reservation .column-reservation-inner input[type="email"]
+{
+	width: 100%;
+    margin-bottom: 22px;
+    padding: 17px 19px;
+    border: 2px solid transparent;
+    outline: 0;
+    font-family: Merriweather,serif;
+    font-style: italic;
+    font-size: 13px;
+    background-color: #f6f4ef;
+    color: #c7a17a;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.one-column textarea{
+	width: 100%;
+    margin-bottom: 22px;
+    padding: 17px 19px;
+    border: 2px solid transparent;
+    outline: 0;
+    font-family: Merriweather,serif;
+    font-style: italic;
+    font-size: 13px;
+    background-color: #f6f4ef;
+    color: #c7a17a;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.one-column .submit-form{
+	display: inline-block;
+    width: auto;
+    font-family: 'Open Sans',sans-serif;
+    padding: 14px 35px;
+    line-height: 1.7em;
+    border: 2px solid #c7a17a;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #c7a17a;
+    cursor: pointer;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+.one-column .submit-form:hover{
+	background-color: #000;
+	color: #FFF;
+	border: 2px solid #000;
+}
+.img-reservation{
+	float: left;
+	width: 33.3333333%;
+	padding: 4% 0 0 7%;
+}
+/* end reservation */
 
 
 
