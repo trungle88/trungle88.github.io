@@ -82,6 +82,7 @@ ul,ol {
     position: relative;
     font-weight: 400;
     height: 45px;
+    line-height: 40px;
     z-index: 111;
     vertical-align: middle;
 }
@@ -105,14 +106,7 @@ ul,ol {
     z-index: 2;
     height: 100%;
     text-align: right;
-}
-.position-left:before,.position-center:before,.position-right:before{
-	content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    margin-right: -3px;
-}
+}	
 .position-left-inner,.position-right-inner{
 	vertical-align: middle;
 	display: inline-block;
@@ -177,6 +171,7 @@ ul.menu-top-bar li a{
 }
 .menu-area{
 	height: 70px;
+	line-height: 68px;
     position: relative;
     border-bottom: 1px solid transparent;
 }
@@ -211,16 +206,21 @@ ul.menu-top-bar li a{
 	display: inline-block;
 	position: relative;
 }
-.main-menu>ul>li:nth-child(6){
+.main-menu>ul>li.li-after:after{
+	content: " ";
 	border-right: 2px solid rgba(0,0,0,.5);
-	padding-right: 17px;
-	margin-right: 17px;
+	width: 2px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 31%;
 }
+
 .main-menu>ul>li>a{
 	display: block;
     padding: 0 17px;
     font-size: 15px;
-    line-height: 22px;
     font-weight: 700;
     color: #30271c;
     font-family: 'Oswald',sans-serif;
@@ -289,7 +289,7 @@ ul.menu-top-bar li a{
 .shopping-cart-outer .shopping-cart-header .header-cart{
 	display: inline-block;
 	position: relative;
-	padding: 0 10px 0 7px;
+	padding: 0 15px 0 15px;
 }
 .shopping-cart-outer .shopping-cart-header .header-cart i{
 	color: #30271c;
@@ -300,8 +300,8 @@ ul.menu-top-bar li a{
 }
 .shopping-cart-outer .cart-amount{
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 18px;
+	right: 3px;
 	font-size: 9px;
 	color: #FFF;
 	background-color: #c7a17a;
@@ -318,11 +318,11 @@ ul.menu-top-bar li a{
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-	position: relative;
+	line-height: 100%;
 }
 .search-barista i{
 	position: absolute;
-	top: 6px;
+	top: 26px;
 	right: 6px;
 	cursor: pointer;
 }
