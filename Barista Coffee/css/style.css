@@ -9,18 +9,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
 * {
     -webkit-box-sizing: border-box;
   	box-sizing: border-box;
 }
-
 img {
     border: 0px;
     max-width: 100%;
     height: auto;
 }
-
 .clear {
     clear: both;
     float: none !important;
@@ -29,11 +26,9 @@ img {
     content: " ";
     display: table;
 }
-
 *:focus {
     outline: 0;
 }
-
 a {
     text-decoration: none;
     margin: 0;
@@ -54,6 +49,14 @@ h3 {
     font-size: 22px;
     letter-spacing: .5px;
     line-height: 1.22727em;
+}
+h4{
+	font-size: 19px;
+    line-height: 1.31579em;
+}
+h5 {
+    font-size: 14px;
+    line-height: 1.28571em;
 }
 ul,ol {
     margin: 0;
@@ -206,7 +209,7 @@ ul.menu-top-bar li a{
 	display: inline-block;
 	position: relative;
 }
-.main-menu>ul>li.li-after:after{
+.main-menu>ul>li:last-child:after{
 	content: " ";
 	border-right: 2px solid rgba(0,0,0,.5);
 	width: 2px;
@@ -216,17 +219,15 @@ ul.menu-top-bar li a{
 	right: 0;
 	top: 31%;
 }
-
 .main-menu>ul>li>a{
 	display: block;
-    padding: 0 17px;
+    padding: 0 20px;
     font-size: 15px;
     font-weight: 700;
     color: #30271c;
     font-family: 'Oswald',sans-serif;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-
 }
 .main-menu ul li.active a,.main-menu ul li:hover a{
 	color: #c7a17a;
@@ -240,7 +241,6 @@ ul.menu-top-bar li a{
 	right: auto;
 	z-index: 999;
 	border-top: 2px solid #c7a17a;
-	
 }
 .main-menu ul li ul.sub-menu-barista li{
 	width: 227px;
@@ -339,8 +339,6 @@ ul.menu-top-bar li a{
     width: 200px;
 }
 /* end header */
-
-
 
 /* start main */
 #main{
@@ -489,11 +487,8 @@ ul.menu-top-bar li a{
 .brt-banner .brt-banner-text .brt-banner-text-table .brt-banner-text-cell .brt-banner-title{
 	color: #ffffff;
     font-size: 50px;
-    text-transform: uppercase;
     line-height: 1.3em;
     letter-spacing: 1px;
-    font-family: 'Oswald',sans-serif;
-    font-weight: 700;
     margin: 0;
 }
 .brt-banner .brt-banner-text .brt-banner-text-table .brt-banner-text-cell .brt-banner-read-more{
@@ -596,17 +591,10 @@ ul.menu-top-bar li a{
   	-webkit-transition: all 0.6s ease;
   	transition: all 0.6s ease;
   	opacity: 1;
-  	
 }
 .merchandise-coffee-product-inner ul.brt-product li .product-list-title{
 	margin: 10px 0;
-	font-size: 19px;
-	line-height: 1.3em;
-	font-family: 'Oswald',sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
 }
-
 .merchandise-coffee-product-inner ul.brt-product li .product-list-title a{
     color: #30271c;
 }
@@ -621,7 +609,6 @@ ul.menu-top-bar li a{
     font-family: Merriweather,serif;
     font-weight: 400;
 }
-
 .gift-off-barista{
 	background-image: url(../images/shop-home-grid-img.jpg);
 	background-repeat: no-repeat;
@@ -636,12 +623,10 @@ ul.menu-top-bar li a{
 	
 }
 .gift-off-barista-item h2{
-	font-family: Oswald;
     font-size: 55px;
     line-height: 60px;
     font-weight: 600;
     letter-spacing: 2px;
-    text-transform: uppercase;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 30px 0 40px 0;
@@ -678,7 +663,6 @@ a.read-more:hover{
 	background-color: rgb(255,255,255);
 	border-color: rgb(255,255,255);
 }
-
 .merchandise-sale-title{
 	padding-top: 50px;
 	padding-bottom: 80px;
@@ -711,7 +695,6 @@ span.product-badge{
 .offer-barista{
 	
 }
-
 .owl-carousel{
 	margin: 60px 0;
 }
@@ -722,7 +705,6 @@ span.product-badge{
 .owl-carousel .item:hover{
 	margin-top: -10px;
 }
-
 /* end main */
 
 /* start footer */
@@ -750,7 +732,6 @@ span.product-badge{
 .container-inner{
 	width: 1300px;
 	margin: 0 auto;
-	
 }
 .four-column{
 	width: 100%;
@@ -778,11 +759,6 @@ span.product-badge{
 .widget .footer-widget-title{
 	color: #fff;
 	margin-bottom: 40px;
-	font-size: 19px;
-	line-height: 1.3em;
-	font-family: Oswald,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 .working-hour{
 	width: 70%;
@@ -876,7 +852,6 @@ span.wh-hours .wh-closed{
     width: 250px;
     border-bottom: 1px solid #45423e;
 }
-
 .footer-bottom{
 	width: 100%;
     background-color: #000;
@@ -1131,12 +1106,6 @@ ul.utilities li:nth-child(n+7){
 }
 .title-col-utilities{
 	margin-bottom: 17px;
-	font-size: 19px;
-    line-height: 1.31579em;
-    font-family: Oswald,sans-serif;
-    color: #30271c;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-top: 0;
 }
 .barista-offering{
@@ -1275,7 +1244,6 @@ ul.content-contact li:nth-child(n+5){
 	padding-left: 45px;
 }
 .contact-col-content h4{
-	font-size: 19px;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -1485,6 +1453,127 @@ ul.content-contact li:nth-child(n+5){
 	width: 33.3333333%;
 }
 /* end reservation */
+
+/* start team */
+ul.team-row{
+	
+}
+ul.team-row li{
+	float: left;
+	width: 33.333333%;
+	margin-bottom: 70px;
+}
+ul.team-row li:nth-child(n+4){
+	margin-bottom: 0;
+}
+.team-col.main-info-images{
+	text-align: center;
+}
+.team-col.team-col-inner{
+	overflow: hidden;
+	width: 100%;
+}
+.team-col.main-info-images .team-col-images{
+	overflow: visible;
+}
+.team-col .team-col-images{
+	position: relative;
+}
+.team-col .team-col-images img{
+	width: 100%;
+	vertical-align: middle;
+}
+.team-col.main-info-images .team-col-info{
+	padding-top: 27px;
+}
+.team-col.main-info-images .team-name{
+	margin-bottom: 6px;	
+}
+.team-col.main-info-images .team-position{
+	margin: 0;
+    color: #c7a17a;
+    font-family: Merriweather,serif;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 300;
+}
+.team-col.main-info-images .team-col-text{
+	padding: 15px 0 0;
+}
+.team-col.main-info-images .team-description{
+	padding: 0 5px;
+}
+.team-col .team-description{
+	display: table;
+    width: 100%;
+    height: 100%;
+}
+.team-col .team-description p{
+	margin: 0;
+}
+.team-col .team-col-social{
+	display: table;
+    width: 100%;
+    height: 100%;
+}
+.team-col .team-col-social-inner{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.team-col.main-info-images .team-col-social-wrap{
+	margin: 25px 0 0;
+}
+.team-col .social-icon-widget{
+	margin: 0 13px;
+    font-size: 20px;
+    color: #c7a17a;
+}
+.team-col .social-icon-widget:hover i{
+	color: #757575;
+}
+/* end team */
+/* start login */
+.login p{
+	margin: 0 0 25px;
+}
+.login input[type="text"]{
+	width: 100%;
+    outline: 0;
+    font-family: 'Open Sans',serif;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    padding: 11px 20px;
+    resize: none;
+}
+.btn.btn-solid{
+	background-color: #c7a17a;
+    border: 2px solid #c7a17a;
+    color: #fff;
+}
+.btn{
+	display: inline-block;
+    position: relative;
+    outline: 0;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    padding: 14px 35px;
+    font-size: 13px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+	background-color: #000;
+	border: 2px solid #000;
+	color: #fff;
+}
+/* end login */
 
 
 
