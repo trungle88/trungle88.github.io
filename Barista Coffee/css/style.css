@@ -1546,7 +1546,7 @@ ul.team-row li:nth-child(n+4){
     color: #999;
     border: 1px solid #efefef;
     background-color: #fff;
-    padding: 11px 20px;
+    padding: 11px 10px;
     resize: none;
 }
 .btn.btn-solid{
