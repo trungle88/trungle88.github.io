@@ -1,0 +1,248 @@
+@media screen and (max-width: 1200px){
+	.container{
+		width: 1000px;
+	}
+	.element-item{
+		width: 323px;
+		height: auto;
+	}
+	.eturio-box .eturio{
+		width: 28%;
+		margin: 0 4%;
+	}
+	.booking-contact-item{
+		width: 30%;
+	}
+	.element-item img{
+		height: auto;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1030px){
+	.container{
+		width: 800px;
+	}
+	.element-item{
+		width: 256px;
+	}
+	.button-style-1,.button-style-2{
+		width: 120px;
+	}
+	.header-right{
+		display: none;
+	}
+	.mobile-nav-button{
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+	}
+	.booking-contact-item .left{
+		width: 60px;
+		height: 60px;
+		margin-right: 5px;
+	}
+	.booking-contact-item .left i{
+		line-height: 60px;
+	}
+	.fixed{
+		position: static;
+	}
+	.header-right {
+	    clear: both;
+	    float: none;
+	    margin: 0;
+	    width: 100%;
+	    padding: 20px 0;
+	}
+	.container-main-menu {
+	    float: none;
+	    width: 100%;
+	}
+	.container-main-menu li {
+	    display: block;
+	    float: none;
+	    margin: 0;
+	    border-top: 1px solid rgba(137, 137, 137, 0.1)
+	}
+	.social-box{
+		float: none;
+		margin: 0;
+		border-top: 1px solid rgba(137, 137, 137, 0.1);
+	}
+	.social-box a {
+	    line-height: 35px;
+	    padding: 10px 15px 10px 0;
+	}
+	.container-main-menu li a{
+		display: block;
+		font-weight: 700;
+		font-size: 1.5em;
+		line-height: 35px;
+	}
+	.social-box a i{
+		font-size: 2em;
+	}
+	.container-main-menu li a:hover {
+	    color: #cbbb9f;
+	}
+	.services li{
+		margin: 0 1.6%;
+	    width: 22%;
+	}
+}
+@media screen and (max-width: 830px){
+	.container{
+		width: 94%;
+	}
+	.element-item {
+	    margin: 1%;
+	    width: 31.3%;
+	}
+	.services li{
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	.services .last,.services .first{
+		margin: auto;
+	}
+	.sections-mustermann:before{
+		display: none;
+	}
+	.right-mustermann {
+    	float: none;
+	    margin: 0 auto;
+	    width: 90%;
+	}
+	.button-bottom-box{
+		text-align: center;
+	}
+	.eturio-box .eturio .eturio-icon{
+		text-align: center;
+		float: none;
+	}
+	.eturio-box .eturio .eturio-left{
+		float: none;
+		text-align: center;
+	}
+	.button-group .button{
+		width: 20%;
+	}
+	.booking-contact-item .left{
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.booking-contact-item .right {
+	    float: none;
+	    text-align: center;
+	}
+	.contact-box{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.for-name{
+		margin: 0 auto;
+	}
+	.contact-box input[type="text"]{
+		padding-left: 2%;
+		width: 98%;
+	}
+	.for-content{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.for-content textarea{
+		width: 98%;
+		padding: 2%;
+	}
+	.sections-contact form{
+		width: 100%;
+	}
+	.right-mustermann h4{
+		text-align: center;
+		background-position: center center;
+	}
+}
+@media screen and (max-width: 600px){
+	.eturio-box .eturio:first-child{
+		border: none;
+	}
+	.eturio-box .eturio {
+	    padding: 20px 0;
+	    text-align: center;
+	    width: 100%;
+	    border-top: 1px solid #ccc;
+	    margin: 0 auto;
+	}
+	.eturio-top{
+		border: none;
+	}
+	.txtname,.txtemail{
+		width: 90%;
+		margin: 0px auto 10px;
+	}
+	.eturio-box .eturio{
+		width: 90%;
+		margin: 0 5%;
+		text-align: left;
+	}
+	.eturio-box .eturio.first{
+		margin-left: 5%;
+	}
+	.eturio-box .eturio.last{
+		margin-right: 5%;
+	}
+	.eturio-box .eturio .eturio-left{
+		float: left;
+		text-align: left;
+	}
+	.eturio-box .eturio .eturio-icon{
+		float: right;
+		text-align: right;
+	}
+}
+@media screen and (max-width: 480px){
+	.element-item {
+	    margin: 2%;
+	    width: 96%;
+	}
+	.button-style-1, .button-style-2{
+		margin-right: 10px;
+		width: 115px;
+	}
+	.button{
+		font-size: 1.3em;
+	}
+	.button-group .button{
+		width: 25%;
+		margin: 0 3px;
+	}
+	.logo img{
+		width: 66%;
+	}
+	.mobile-nav-button{
+		margin-top: 31px;
+	}
+	
+	.sections-service,.sections-mustermann,.sections-contacts,.sections-galerie,.sections-newsletter,.sections-booking,.sections-contact {
+	    padding: 25px 0;
+	}
+	.isotope{
+		margin-bottom: 50px;
+	}
+	.booking-contact-item{
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	.booking-contact-item .left{
+		float: left;
+		margin-right: 20px;
+	}
+	.booking-contact-item .right{
+		float: left;
+		text-align: left;
+	}
+}
