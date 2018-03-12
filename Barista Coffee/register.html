@@ -7,7 +7,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -139,27 +138,59 @@
 							<div class="section-inner clearfix">
 								<div class="section-inner-margin clearfix">
 									<h3>Register</h3>
-									<form method="post" class="login" action="result.html">
+									<form method="post" id="register" class="register account" action="result.html" target="_blank">
 										<p>
 											<label for="username">
-												Username or email address
+												Username
 												<span class="required">*</span>
 											</label>
-											<input type="text" value="Username" onblur="if (this.value == '') {this.value = 'Username';}" onfocus="if (this.value == 'Username') {this.value = '';}" name="Username">
+											<input type="text" placeholder="Username" name="Username" id="username">
+											<span class="error"></span>
 										</p>
 										<p>
-											<label for="username">
+											<label for="email">
+												Email 
+												<span class="required">*</span>
+											</label>
+											<input type="text" placeholder="Email" name="Email" id="email">
+											<span class="error"></span>
+										</p>
+										<p>
+											<label for="phone">
+												Phone 
+												<span class="required">*</span>
+											</label>
+											<input type="text" placeholder="Phone" name="Phone" id="phone">
+											<span class="error"></span>
+										</p>
+										<p>
+											<label for="password">
 												Password 
 												<span class="required">*</span>
 											</label>
-											<input type="text" value="Password" onblur="if (this.value == '') {this.value = 'Password';}" onfocus="if (this.value == 'Password') {this.value = '';}" name="Password">
+											<input type="password" placeholder="Password" name="Password" id="password">
+											<span class="error"></span>
 										</p>
 										<p>
-											<input type="submit" class="btn btn-solid" name="login" value="Login">
-											<label for="remember" class="inline">
-												<input type="checkbox" name="remember" id="remember" value="forever">
-												Remember
+											<label for="Birth">
+												Birth 
+												<span class="required">*</span>
 											</label>
+											<input type="date" placeholder="Date" name="Date*" id="date">
+											<span class="error"></span>
+										</p>
+										<p>
+											<label for="Gender">
+												Gender 
+												<span class="required">*</span>
+											</label>
+											<br>
+											<input type="radio" name="gender" value="male" required=""> Male
+										    <input type="radio" name="gender" value="female" required=""> Female
+										    <input type="radio" name="gender" value="other" required=""> Other
+										</p>
+										<p>
+											<input type="submit" class="btn btn-solid" name="register" value="Register">
 										</p>
 									</form>
 								</div>

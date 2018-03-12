@@ -1535,10 +1535,10 @@ ul.team-row li:nth-child(n+4){
 }
 /* end team */
 /* start login */
-.login p{
+.account p{
 	margin: 0 0 25px;
 }
-.login input[type="text"]{
+.account input[type="text"],.account input[type= "date"],.account input[type= "email"],.account input[type= "password"]{
 	width: 100%;
     outline: 0;
     font-family: 'Open Sans',serif;
@@ -1574,6 +1574,17 @@ ul.team-row li:nth-child(n+4){
 	color: #fff;
 }
 /* end login */
+/* start register */
+.account input[type="radio"]{
+	display: inline-block;
+	font-family: 'Open Sans',serif;
+    font-size: 14px;
+    color: #999;
+}
+.error{
+	color: #c7a17a;
+}
+/* end register*/
 
 
 
