@@ -1148,27 +1148,11 @@ ul.utilities li:nth-child(n+7){
 .bg-item-2{
 	background-color: #eae7de;
 }
-.bg-item-3{
-	background-image: url(../images/Offerings-holder-img-2.jpg);
-}
-.bg-item-4{
-	background-image: url(../images/Offerings-holder-img-3.jpg);
-}
-.bg-item-5{
-	background-image: url(../images/Offerings-holder-img-4.jpg);
-}
-.bg-item-6{
-	background-image: url(../images/Offerings-holder-img-5.jpg);
-}
-
 .pd-item-1{
 	padding: 19% 45px 17% 60px;
 }
 .pd-item-2{
 	padding: 19% 40px 17% 60px;
-}
-.pd-item-3{
-	padding: 43% 40px 41.85% 60px;
 }
 .color-offering-1{
 	color: #FFF;
@@ -1588,6 +1572,11 @@ ul.team-row li:nth-child(n+4){
 	color: #c7a17a;
 }
 /* end register*/
+/* start cart */
+.return-to-shop{
+	color: #c7a17a !important;
+}
+/* end cart */
 
 
 
