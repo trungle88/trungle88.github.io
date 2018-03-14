@@ -610,7 +610,7 @@ ul.menu-top-bar li a{
     font-weight: 400;
 }
 .gift-off-barista{
-	background-image: url(../images/shop-home-grid-img.jpg);
+	background-image: url(../images/shop-home-grid-img1.jpg);
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 999;
@@ -1020,6 +1020,7 @@ span.wh-hours .wh-closed{
 	height: auto;
 	max-width: 100%;
 	vertical-align: top;
+	border-radius: 50%;
 }
 
 .element-holder-item-content{
@@ -1336,8 +1337,8 @@ ul.content-contact li:nth-child(n+5){
 	margin: 0;
 }
 .barista-row-paralax{
-	background-image: url(../images/out-menu-paralax.jpg);
-	background-position: 50% 48px;
+	background-image: url(../images/out-menu-paralax1.jpg);
+	background-position: 80% -250px;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	position: static;
