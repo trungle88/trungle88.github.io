@@ -4,7 +4,7 @@ $(document).ready(function(){
 			  autoControls: true,
 			  stopAutoOnClick: true,
 			  pager: true,
-			  slideWidth: 630,
+			  slideWidth: 300,
 			  minSlides :1,
 			  maxSlides : 7,
 			  moveSlides: 1,
